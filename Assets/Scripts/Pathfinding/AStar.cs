@@ -2,17 +2,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
 
-public class AStar 
+public class AStar
 {
 
     private int[,] map;
 
-    public List<Vector2Int> GetPath(int[,] map, Vector2Int start, Vector2Int end)
+    public List<Coord> GetPath(int[,] map, Coord start, Coord end)
     {
         this.map = map;
-        List<Vector2Int> path = new List<Vector2Int>();
+        List<Coord> path = new List<Coord>();
 
         Node startNode = new Node(start);
         Node endNode = new Node(end);
@@ -25,7 +24,6 @@ public class AStar
         while (openList.Count > 0) // Loop til end is found
         {
             Node currentNode = openList[0];
-            int currentIndex = 0;
 
             currentNode = openList.OrderBy(x => x.F).FirstOrDefault();
 
@@ -66,7 +64,7 @@ public class AStar
             }
         }
 
-        return new List<Vector2Int>();
+        return new List<Coord>();
     }
 
     List<Node> GetValidAdjacentNodes(Node node)
@@ -75,10 +73,10 @@ public class AStar
         int x = node.Position.x;
         int y = node.Position.y;
 
-        nodes.Add(ConvertPositionToNode(new Vector2Int(x, y - 1)));
-        nodes.Add(ConvertPositionToNode(new Vector2Int(x, y + 1)));
-        nodes.Add(ConvertPositionToNode(new Vector2Int(x - 1, y)));
-        nodes.Add(ConvertPositionToNode(new Vector2Int(x + 1, y)));
+        nodes.Add(ConvertPositionToNode(new Coord(x, y - 1)));
+        nodes.Add(ConvertPositionToNode(new Coord(x, y + 1)));
+        nodes.Add(ConvertPositionToNode(new Coord(x - 1, y)));
+        nodes.Add(ConvertPositionToNode(new Coord(x + 1, y)));
 
         for (int i = 0; i < nodes.Count; i++)
         {
@@ -91,7 +89,7 @@ public class AStar
 
         return nodes;
 
-        bool IsValidPosition(Vector2Int pos)
+        bool IsValidPosition(Coord pos)
         {
             if (pos.x > map.GetUpperBound(0) || pos.y > map.GetUpperBound(1) || pos.x < 0 || pos.y < 0)
                 return false;
@@ -103,23 +101,23 @@ public class AStar
         }
 
 
-        Node ConvertPositionToNode(Vector2Int pos)
+        Node ConvertPositionToNode(Coord pos)
         {
             return new Node(pos);
         }
     }
 
 
-    class Node : IEquatable<Node>
+    class Node
     {
         public int G;
         public int H;
         public int F;
 
-        public Vector2Int Position;
+        public Coord Position;
         public Node parent;
 
-        public Node(Vector2Int position, Node parent = null)
+        public Node(Coord position, Node parent = null)
         {
             Position = position;
             this.parent = parent;
@@ -133,18 +131,18 @@ public class AStar
 
             return false;
         }
+    }
 
-        public bool Equals(Node other)
-        {
-            return other != null &&
-                   Position.Equals(other.Position);
-        }
+}
 
-        public override int GetHashCode()
-        {
-            var hashCode = -38550939;
-            hashCode = hashCode * -1521134295 + EqualityComparer<Vector2>.Default.GetHashCode(Position);
-            return hashCode;
-        }
+public class Coord
+{
+    public int x;
+    public int y;
+
+    public Coord(int x, int y)
+    {
+        this.x = x;
+        this.y = y;
     }
 }

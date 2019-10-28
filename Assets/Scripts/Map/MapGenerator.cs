@@ -52,11 +52,12 @@ public class MapGenerator : MonoBehaviour
         }
         endPoint = GenerateEndPoint();
         startPoint = GenerateStartPoint();
-        List<Vector2Int> paths = aStar.GetPath(Map, startPoint, endPoint);
+        List<Coord> paths = aStar.GetPath(Map, new Coord(startPoint.x, startPoint.y), new Coord(endPoint.x, endPoint.y));
 
         foreach (var path in paths)
         {
-            objMap[path.x, path.y].GetComponent<Renderer>().material = pathMaterial;
+            Debug.Log(path);
+            //objMap[path.x, path.y].GetComponent<Renderer>().material = pathMaterial;
         }
     }
 
