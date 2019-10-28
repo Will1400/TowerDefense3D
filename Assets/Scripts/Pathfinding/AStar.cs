@@ -26,12 +26,16 @@ public class AStar
             Node currentNode = openList[0];
 
             currentNode = openList.OrderBy(x => x.F).FirstOrDefault();
+            if (currentNode is null)
+            {
+                break;
+            }
 
             openList.Remove(currentNode);
             closedList.Add(currentNode);
 
 
-            if (currentNode == endNode) // Found goal
+            if (currentNode.Equals(endNode)) // Found goal
             {
                 Node current = currentNode;
 
@@ -46,7 +50,7 @@ public class AStar
             List<Node> children = GetValidAdjacentNodes(currentNode);
 
 
-            foreach (Node child in children)
+            foreach (Node child in children) // stuck
             {
                 if (closedList.Contains(child))
                     continue;
@@ -55,7 +59,7 @@ public class AStar
                 child.H = Convert.ToInt32(Math.Pow(child.Position.x - endNode.Position.x, 2) + Math.Pow(child.Position.y - endNode.Position.y, 2));
                 child.F = child.G + child.H;
 
-                foreach (Node openNode in openList)
+                foreach (Node openNode in openList) // stuck
                 {
                     if (child.Equals(openNode) && child.G > openNode.G)
                         continue;
@@ -100,13 +104,11 @@ public class AStar
             return false;
         }
 
-
         Node ConvertPositionToNode(Coord pos)
         {
             return new Node(pos);
         }
     }
-
 
     class Node
     {
@@ -132,7 +134,6 @@ public class AStar
             return false;
         }
     }
-
 }
 
 public class Coord
@@ -144,5 +145,13 @@ public class Coord
     {
         this.x = x;
         this.y = y;
+    }
+
+    public override bool Equals(object obj)
+    {
+        if (obj is Coord coord)
+            return coord.x == x && coord.y == y;
+
+        return false;
     }
 }
