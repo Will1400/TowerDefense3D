@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class MapGenerator : MonoBehaviour
 {
-    public int[,] Map;
+    public static MapGenerator Instance { get; set; }
+
+
+    public int[,] Map; // 0 = tile, 1 = path, 2 = wall,  9 = start , 10 = end
     public Transform[,] objMap;
     public int Seed = 10;
 
+    [HideInInspector]
+    public List<Coord> Path;
+
     [SerializeField]
     private Transform tilePrefab;
+    [SerializeField]
+    private Transform pathPrefab;
     [SerializeField]
     private GameObject startPointPrefab;
     [SerializeField]
@@ -30,6 +38,15 @@ public class MapGenerator : MonoBehaviour
 
     void Start()
     {
+        if (MapGenerator.Instance is null)
+        {
+            MapGenerator.Instance = this;
+        }
+        else if (MapGenerator.Instance != this)
+        {
+            Destroy(gameObject);
+        }
+
         GenerateMap();
     }
 
@@ -42,23 +59,14 @@ public class MapGenerator : MonoBehaviour
             for (int y = 0; y < mapSize.y; y++)
             {
                 Map[x, y] = 0;
-                Vector3 tilePosition = new Vector3(-mapSize.x / 2 + .5f + x, 0, -mapSize.y / 2 + .5f + y);
-                Transform newTile = Instantiate(tilePrefab, tilePosition, Quaternion.identity).transform;
-                newTile.localScale = new Vector3(1 * (1 - outlinePercent), newTile.localScale.y, 1 * (1 - outlinePercent));
-                newTile.localPosition += new Vector3(0, .5f - newTile.localScale.y / 2);
-                newTile.SetParent(mapHolder.Find("Tiles"));
-                objMap[x, y] = newTile;
             }
         }
+
         endPoint = GenerateEndPoint();
         startPoint = GenerateStartPoint();
-        List<Coord> paths = aStar.GetPath(Map, new Coord(startPoint.x, startPoint.y), new Coord(endPoint.x, endPoint.y));
+        GeneratePath(startPoint, endPoint);
 
-        foreach (var path in paths)
-        {
-            Debug.Log(path);
-            //objMap[path.x, path.y].GetComponent<Renderer>().material = pathMaterial;
-        }
+        RenderMap();
     }
 
     void Setup()
@@ -72,6 +80,14 @@ public class MapGenerator : MonoBehaviour
             mapSize.y = 4;
 
         Map = new int[mapSize.x, mapSize.y];
+
+    }
+
+
+
+
+    void RenderMap()
+    {
         objMap = new Transform[mapSize.x, mapSize.y];
 
         string holderName = "Generated Map";
@@ -86,8 +102,32 @@ public class MapGenerator : MonoBehaviour
         Transform objects = new GameObject("Objects").transform;
         objects.parent = mapHolder;
 
-        Transform path = new GameObject("Path").transform;
-        path.parent = mapHolder;
+        Transform pathHolder = new GameObject("Path").transform;
+        pathHolder.parent = mapHolder;
+
+
+        for (int x = 0; x < mapSize.x; x++)
+        {
+            for (int y = 0; y < mapSize.y; y++)
+            {
+                Vector3 position = new Vector3(-mapSize.x / 2 + .5f + x, 0, -mapSize.y / 2 + .5f + y);
+                Transform newTile;
+                switch (Map[x, y])
+                {
+                    case 0:
+                        newTile = Instantiate(tilePrefab, position, Quaternion.identity, mapHolder.Find("Tiles")).transform;
+                        newTile.localScale = new Vector3(1 * (1 - outlinePercent), newTile.localScale.y, 1 * (1 - outlinePercent));
+                        newTile.localPosition += new Vector3(0, .5f - newTile.localPosition.y / 2);
+                        objMap[x, y] = newTile;
+                        newTile.name = $"Tile {x} {y}";
+                        break;
+                    case 1:
+                        newTile = Instantiate(pathPrefab, position, Quaternion.identity, mapHolder.Find("Path")).transform;
+                        newTile.localPosition += new Vector3(0, .5f - newTile.localPosition.y / 2);
+                        break;
+                }
+            }
+        }
     }
 
     Vector2Int GenerateEndPoint()
@@ -108,5 +148,20 @@ public class MapGenerator : MonoBehaviour
         Instantiate(startPointPrefab, new Vector3(-mapSize.x / 2 + .5f + x, 1, -mapSize.y / 2 + .5f + y), Quaternion.identity, mapHolder.Find("Path"));
 
         return new Vector2Int(x, y);
+    }
+
+    void GeneratePath(Vector2Int startPoint, Vector2Int endPoint)
+    {
+        Path = aStar.GetPath(Map, new Coord(startPoint.x, startPoint.y), new Coord(endPoint.x, endPoint.y));
+
+        foreach (var path in Path)
+        {
+            Map[path.x, path.y] = 1;
+            //var pathObj = objMap[path.x, path.y];
+            //pathObj.GetComponent<Renderer>().material = pathMaterial;
+            //pathObj.SetParent(mapHolder.Find("Path"));
+            //pathObj.localScale = new Vector3(1, pathObj.localScale.y, 1);
+            //pathObj.name = $"Path {path.x} {path.y}";
+        }
     }
 }

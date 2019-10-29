@@ -20,53 +20,44 @@ public class AStar
         List<Node> closedList = new List<Node>();
 
         openList.Add(startNode);
+        Node currentNode = openList[0];
 
-        while (openList.Count > 0) // Loop til end is found
+        while (openList.Count > 0 && !closedList.Exists(x => x.Position.Equals(endNode.Position))) // Loop til end is found
         {
-            Node currentNode = openList[0];
 
             currentNode = openList.OrderBy(x => x.F).FirstOrDefault();
-            if (currentNode is null)
-            {
-                break;
-            }
 
             openList.Remove(currentNode);
             closedList.Add(currentNode);
 
-
-            if (currentNode.Equals(endNode)) // Found goal
-            {
-                Node current = currentNode;
-
-                while (current != null)
-                {
-                    path.Add(current.Position);
-                    current = current.parent;
-                }
-                return path;
-            }
-
             List<Node> children = GetValidAdjacentNodes(currentNode);
-
 
             foreach (Node child in children) // stuck
             {
-                if (closedList.Contains(child))
+                if (closedList.Contains(child) || openList.Contains(child))
                     continue;
 
+                child.parent = currentNode;
+                child.H = Math.Abs(child.Position.x - endNode.Position.x) + Math.Abs(child.Position.y - endNode.Position.y);
                 child.G = currentNode.G + 1;
-                child.H = Convert.ToInt32(Math.Pow(child.Position.x - endNode.Position.x, 2) + Math.Pow(child.Position.y - endNode.Position.y, 2));
                 child.F = child.G + child.H;
-
-                if (openList.Contains(child) && child.G > openList[openList.IndexOf(child)].G)
-                    continue;
 
                 openList.Add(child);
             }
         }
 
-        return new List<Coord>();
+        if (currentNode.Equals(endNode)) // Found goal
+        {
+            Node current = currentNode;
+
+            while (current != null && !current.parent.Equals(startNode))
+            {
+                path.Add(current.Position);
+                current = current.parent;
+            }
+        }
+
+        return path;
     }
 
     List<Node> GetValidAdjacentNodes(Node node)
@@ -75,19 +66,15 @@ public class AStar
         int x = node.Position.x;
         int y = node.Position.y;
 
-        nodes.Add(ConvertPositionToNode(new Coord(x, y - 1)));
-        nodes.Add(ConvertPositionToNode(new Coord(x, y + 1)));
-        nodes.Add(ConvertPositionToNode(new Coord(x - 1, y)));
-        nodes.Add(ConvertPositionToNode(new Coord(x + 1, y)));
+        if (IsValidPosition(new Coord(x, y - 1)))
+            nodes.Add(ConvertPositionToNode(new Coord(x, y - 1)));
+        if (IsValidPosition(new Coord(x, y + 1)))
+            nodes.Add(ConvertPositionToNode(new Coord(x, y + 1)));
+        if (IsValidPosition(new Coord(x - 1, y)))
+            nodes.Add(ConvertPositionToNode(new Coord(x - 1, y)));
+        if (IsValidPosition(new Coord(x + 1, y)))
+            nodes.Add(ConvertPositionToNode(new Coord(x + 1, y)));
 
-        for (int i = 0; i < nodes.Count; i++)
-        {
-            if (!IsValidPosition(nodes[i].Position))
-            {
-                nodes.RemoveAt(i);
-                i--;
-            }
-        }
 
         return nodes;
 
@@ -127,7 +114,7 @@ public class AStar
         public override bool Equals(object obj)
         {
             if (obj is Node node)
-                return Position == node.Position;
+                return Position.Equals(node.Position);
 
             return false;
         }

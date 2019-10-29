@@ -10,6 +10,7 @@ public class MapEditor : Editor
     {
         MapGenerator map = target as MapGenerator;
 
+        DrawDefaultInspector();
 
         if (GUILayout.Button("Generate Map"))
         {
