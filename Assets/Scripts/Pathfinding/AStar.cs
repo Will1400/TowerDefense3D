@@ -55,11 +55,9 @@ public class AStar
                 child.H = Convert.ToInt32(Math.Pow(child.Position.x - endNode.Position.x, 2) + Math.Pow(child.Position.y - endNode.Position.y, 2));
                 child.F = child.G + child.H;
 
-                foreach (Node openNode in openList)
-                {
-                    if (child.Equals(openNode) && child.G > openNode.G)
-                        continue;
-                }
+                if (openList.Contains(child) && child.G > openList[openList.IndexOf(child)].G)
+                    continue;
+
                 openList.Add(child);
             }
         }
