@@ -2,11 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
 
 public class AStar
 {
-
     private int[,] map;
 
     public List<Coord> GetPath(int[,] map, Coord start, Coord end)
@@ -139,11 +137,6 @@ public class Coord
             return coord.x == x && coord.y == y;
 
         return false;
-    }
-
-    public static implicit operator Vector3(Coord v)
-    {
-        return new Vector3(v.x, 0, v.y);
     }
 
     public override string ToString()
