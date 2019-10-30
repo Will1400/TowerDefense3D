@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 
 public class AStar
 {
@@ -50,7 +51,7 @@ public class AStar
         {
             Node current = currentNode;
 
-            while (current != null && !current.parent.Equals(startNode))
+            while (current != null)
             {
                 path.Add(current.Position);
                 current = current.parent;
@@ -138,5 +139,10 @@ public class Coord
             return coord.x == x && coord.y == y;
 
         return false;
+    }
+
+    public static implicit operator Vector3(Coord v)
+    {
+        return new Vector3(v.x, 0, v.y);
     }
 }
