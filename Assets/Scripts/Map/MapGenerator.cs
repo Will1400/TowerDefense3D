@@ -20,7 +20,7 @@ public class MapGenerator : MonoBehaviour
     public List<Coord> Path;
 
     [SerializeField, Range(0, 10)]
-    private int pathDeviation = 3;
+    private int pathDeviation = 1;
     [SerializeField]
     private Transform tilePrefab;
     [SerializeField]
@@ -33,7 +33,7 @@ public class MapGenerator : MonoBehaviour
     [SerializeField]
     private Material pathMaterial;
     [SerializeField]
-    private Vector2Int mapSize;
+    private Vector2Int mapSize = new Vector2Int(20, 20);
     [SerializeField, Range(0, 1)]
     private float outlinePercent;
 
@@ -95,7 +95,6 @@ public class MapGenerator : MonoBehaviour
         Map = new int[mapSize.x, mapSize.y];
     }
 
-
     void RenderMap()
     {
         objMap = new Transform[mapSize.x, mapSize.y];
@@ -115,7 +114,6 @@ public class MapGenerator : MonoBehaviour
         Transform pathHolder = new GameObject("Path").transform;
         pathHolder.parent = mapHolder;
 
-
         for (int x = 0; x < mapSize.x; x++)
         {
             for (int y = 0; y < mapSize.y; y++)
@@ -124,7 +122,6 @@ public class MapGenerator : MonoBehaviour
                 Transform newTile;
                 switch (Map[x, y])
                 {
-
                     case 1: // Path
                         newTile = Instantiate(pathPrefab, position, Quaternion.identity, mapHolder.Find("Path")).transform;
                         newTile.localPosition += new Vector3(0, .5f - newTile.localPosition.y / 2);
@@ -173,7 +170,6 @@ public class MapGenerator : MonoBehaviour
 
     void GeneratePath(Vector2Int startPoint, Vector2Int endPoint)
     {
-
         List<Coord> points = new List<Coord>();
 
         points.Add(new Coord(startPoint.x, startPoint.y));
@@ -182,8 +178,6 @@ public class MapGenerator : MonoBehaviour
             points.Add(new Coord(Random.Range(0, mapSize.x), Random.Range(0, mapSize.y)));
         }
         points.Add(new Coord(endPoint.x, endPoint.y));
-
-
 
         for (int i = 0; i < points.Count - 1; i++)
         {
@@ -199,7 +193,6 @@ public class MapGenerator : MonoBehaviour
                     Path.Add(item);
             }
         }
-
 
         for (int i = 1; i < Path.Count - 1; i++)
         {
