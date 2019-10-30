@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
         if (currentWaypoint is null)
             return;
 
-        if (Vector3.Distance(transform.position, currentWaypoint.position) < .2f)
+        if (Vector3.Distance(transform.position, currentWaypoint.position) < .1f)
         {
             NextWaypoint();
         }

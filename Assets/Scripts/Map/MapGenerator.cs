@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MapGenerator : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class MapGenerator : MonoBehaviour
     public Transform[,] objMap;
     public int Seed = 10;
     public List<Transform> Waypoints;
+
+    public UnityEvent MapRendered;
 
     [HideInInspector]
     public List<Coord> Path;
@@ -49,6 +52,7 @@ public class MapGenerator : MonoBehaviour
             Destroy(gameObject);
         }
 
+        MapRendered = new UnityEvent();
         GenerateMap();
     }
 
@@ -140,6 +144,7 @@ public class MapGenerator : MonoBehaviour
             }
         }
         GenerateWaypoints();
+        MapRendered.Invoke();
     }
 
     Vector2Int GenerateEndPoint()
