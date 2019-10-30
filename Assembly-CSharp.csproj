@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
+    <Compile Include="Assets\Scripts\IDamageable.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\WaveManager.cs" />
     <Compile Include="Assets\Scripts\Map\Endpoint.cs" />
@@ -72,6 +73,9 @@
     <Compile Include="Assets\Scripts\Map\Tile\Tile.cs" />
     <Compile Include="Assets\Scripts\Map\Tile\TileState.cs" />
     <Compile Include="Assets\Scripts\Pathfinding\AStar.cs" />
+    <Compile Include="Assets\Scripts\Turrets\ProjectileTurret.cs" />
+    <Compile Include="Assets\Scripts\Turrets\RayTurret.cs" />
+    <Compile Include="Assets\Scripts\Turrets\Turret.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/will1400/Documents/Unity/TowerDefense3D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

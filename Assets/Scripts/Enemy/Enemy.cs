@@ -3,16 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IDamageable
 {
     [SerializeField]
     private float speed = .5f;
 
-    public float Speed
-    {
-        get { return speed; }
-        set { speed = value; }
-    }
+    private int health = 5;
 
     private Transform currentWaypoint;
     private int currentWaypointIndex;
@@ -49,5 +45,10 @@ public class Enemy : MonoBehaviour
 
         currentWaypoint = MapGenerator.Instance.Waypoints[currentWaypointIndex];
         transform.LookAt(currentWaypoint.position);
+    }
+
+    public void Damage(int damage)
+    {
+        health -= damage;
     }
 }

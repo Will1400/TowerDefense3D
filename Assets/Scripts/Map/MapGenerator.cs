@@ -19,6 +19,8 @@ public class MapGenerator : MonoBehaviour
     [HideInInspector]
     public List<Coord> Path;
 
+    [SerializeField, Range(0, 10)]
+    private int pathDeviation = 3;
     [SerializeField]
     private Transform tilePrefab;
     [SerializeField]
@@ -82,6 +84,7 @@ public class MapGenerator : MonoBehaviour
     void Setup()
     {
         aStar = new AStar();
+        Path = new List<Coord>();
         Random.InitState(Seed + (int)mapSize.x + (int)mapSize.y);
 
         if (mapSize.x < 4)
@@ -125,6 +128,7 @@ public class MapGenerator : MonoBehaviour
                     case 1: // Path
                         newTile = Instantiate(pathPrefab, position, Quaternion.identity, mapHolder.Find("Path")).transform;
                         newTile.localPosition += new Vector3(0, .5f - newTile.localPosition.y / 2);
+                        newTile.name = $"Path {x} {y}";
                         break;
                     case 9: // StartPoint
                         newTile = Instantiate(pathPrefab, position, Quaternion.identity, mapHolder.Find("Path")).transform;
@@ -169,7 +173,33 @@ public class MapGenerator : MonoBehaviour
 
     void GeneratePath(Vector2Int startPoint, Vector2Int endPoint)
     {
-        Path = aStar.GetPath(Map, new Coord(startPoint.x, startPoint.y), new Coord(endPoint.x, endPoint.y));
+
+        List<Coord> points = new List<Coord>();
+
+        points.Add(new Coord(startPoint.x, startPoint.y));
+        for (int i = 0; i < pathDeviation; i++)
+        {
+            points.Add(new Coord(Random.Range(0, mapSize.x), Random.Range(0, mapSize.y)));
+        }
+        points.Add(new Coord(endPoint.x, endPoint.y));
+
+
+
+        for (int i = 0; i < points.Count - 1; i++)
+        {
+            Coord start = points[i];
+            Coord end = points[i + 1];
+
+            var newPaths = aStar.GetPath(Map, start, end);
+            newPaths.Reverse();
+
+            foreach (Coord item in newPaths)
+            {
+                if (!Path.Contains(item))
+                    Path.Add(item);
+            }
+        }
+
 
         for (int i = 1; i < Path.Count - 1; i++)
         {
@@ -186,15 +216,13 @@ public class MapGenerator : MonoBehaviour
             Coord current = Path[i];
             Coord next = Path[i + 1];
 
-
             if (!AlignsWith(previous, next))
             {
                 PlaceWaypoint(current);
             }
-
         }
 
-        PlaceWaypoint(Path.First());
+        PlaceWaypoint(Path.Last());
 
         bool AlignsWith(Coord first, Coord second)
         {
@@ -204,14 +232,14 @@ public class MapGenerator : MonoBehaviour
             }
             return true;
         }
+    }
 
-        void PlaceWaypoint(Coord point)
-        {
-            var waypoint = new GameObject("Waypoint");
-            Vector3 position = new Vector3(-mapSize.x / 2 + .5f + point.x, 1, -mapSize.y / 2 + .5f + point.y);
-            waypoint.transform.position = position;
-            waypoint.transform.SetParent(mapHolder.Find("Path"));
-            Waypoints.Add(waypoint.transform);
-        }
+    void PlaceWaypoint(Coord point)
+    {
+        var waypoint = new GameObject("Waypoint");
+        Vector3 position = new Vector3(-mapSize.x / 2 + .5f + point.x, 1, -mapSize.y / 2 + .5f + point.y);
+        waypoint.transform.position = position;
+        waypoint.transform.SetParent(mapHolder.Find("Path"));
+        Waypoints.Add(waypoint.transform);
     }
 }

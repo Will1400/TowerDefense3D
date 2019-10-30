@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    
+    public int Health;
 
     void Awake()
     {
@@ -27,6 +27,6 @@ public class GameManager : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-
+        Health -= damage;
     }
 }

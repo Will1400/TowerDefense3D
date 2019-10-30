@@ -145,4 +145,9 @@ public class Coord
     {
         return new Vector3(v.x, 0, v.y);
     }
+
+    public override string ToString()
+    {
+        return $"x: {x} y: {y}";
+    }
 }

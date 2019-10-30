@@ -26,18 +26,22 @@ public class WaveManager : MonoBehaviour
         MapGenerator.Instance.MapRendered.AddListener(OnMapRendered);
     }
 
-    private void Awake()
-    {
-    }
-
     void OnMapRendered()
     {
         GetSpawnPoints();
+        StopCoroutine(SpawnEnemies());
+        foreach (Transform item in enemyHolder)
+        {
+            Destroy(item.gameObject);
+        }
         StartCoroutine(SpawnEnemies());
     }
 
     IEnumerator SpawnEnemies()
     {
+        if (spawnPoints.Count == 0)
+           yield break;
+
         while (true)
         {
             Instantiate(enemyPrefab, spawnPoints[0], Quaternion.identity, enemyHolder);

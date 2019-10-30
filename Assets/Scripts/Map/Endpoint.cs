@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Endpoint : MonoBehaviour
 {
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
