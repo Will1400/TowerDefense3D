@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 522}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -112,8 +112,8 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 713, y: 494}
-  m_MaxSize: {x: 18008, y: 14044}
+  m_MinSize: {x: 713, y: 472}
+  m_MaxSize: {x: 18008, y: 14022}
   vertical: 0
   controlID: 32
 --- !u!114 &6
@@ -160,8 +160,8 @@ MonoBehaviour:
     y: 0
     width: 1220
     height: 516
-  m_MinSize: {x: 202, y: 222}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -188,8 +188,8 @@ MonoBehaviour:
     y: 516
     width: 1220
     height: 431
-  m_MinSize: {x: 202, y: 222}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -217,8 +217,8 @@ MonoBehaviour:
     y: 0
     width: 308
     height: 947
-  m_MinSize: {x: 234, y: 494}
-  m_MaxSize: {x: 10004, y: 14044}
+  m_MinSize: {x: 234, y: 472}
+  m_MaxSize: {x: 10004, y: 14022}
   vertical: 1
   controlID: 79
 --- !u!114 &10
@@ -240,8 +240,8 @@ MonoBehaviour:
     y: 0
     width: 308
     height: 384
-  m_MinSize: {x: 204, y: 222}
-  m_MaxSize: {x: 4004, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -292,8 +292,8 @@ MonoBehaviour:
     y: 0
     width: 392
     height: 947
-  m_MinSize: {x: 277, y: 72}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -363,9 +363,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -32.017212, y: -46.929688, z: 33.976643}
+    m_Target: {x: 4.174233, y: 1.1728334, z: -0.5442635}
     speed: 2
-    m_Value: {x: -32.017212, y: -46.929688, z: 33.976643}
+    m_Value: {x: -0.18706456, y: -0.0037657854, z: 0.34684741}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -394,13 +394,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.3582261, y: -0.2934617, z: 0.11990679, w: 0.87835133}
+    m_Target: {x: 0.30132014, y: -0.33953157, z: 0.1164125, w: 0.8837654}
     speed: 2
-    m_Value: {x: 0.35816804, y: -0.29341415, z: 0.11988735, w: 0.87820894}
+    m_Value: {x: 0.12365574, y: -0.8215196, z: 0.19650392, w: 0.5207696}
   m_Size:
-    m_Target: 83.82952
+    m_Target: 2.6586022
     speed: 2
-    m_Value: 83.82952
+    m_Value: 2.5759144
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -625,7 +625,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 12288
+  m_LastSelectedObjectID: 424484
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -655,20 +655,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 00300000
-      m_LastClickedID: 12288
-      m_ExpandedIDs: 76e6e5ff82e6e5ff8c07e6ff9007e6ff661ae6ff6e1ae6ff721ae6ff4e2fe6ff522fe6ff1642e6ff2242e6ffaa5de6ffb25de6ffb65de6ff0699e6ff0e99e6ff1299e6ff72ade6ff7eade6ff12c1e6ff1ec1e6ffb6dee6ffbadee6ff2cbeffff30beffff06d1ffff0ed1ffff3cd2ffff40d2ffff4ed2ffff52d2ffff16e5ffff22e5ffffe4e6ffffe8e6ffffbef9ffffc6f9ffffcaf9ffff50faffff60fbfffff82f000000300000
+      m_SelectedIDs: 645bf4ff
+      m_LastClickedID: -763036
+      m_ExpandedIDs: 485ef3ff545ef3ffe21af4ff7e2ef4ff645bf4ff705bf4ff549ff4ff589ff4ff36b2f4ff42b2f4ff6884f5ff4a87f5ff9899f5ffa499f5ffeeb5f5fffab5f5ff0ef4f5ff6e05f6ff7605f6ff7c07f6ff8807f6ff1054f6ff1c54f6ff4e7ef6ff5a7ef6ff7891f6ff8491f6ff52baf6ff5ebaf6ff1405f7ff2005f7ffaa46f7ffb646f7ffaa5af7ffb65af7ff5e70f7ff6670f7ff6a70f7ff4c84f7ff5884f7ff5299f7ff5e99f7ffa868f8ffb068f8ffb468f8ff5e7df8ff667df8ff6a7df8ff2acbf8ff36cbf8ffe89df9fff49df9ffbcacf9fff6b1f9ff02b2f9ffc2d8f9ffced8f9ffa805faffb405faff0c1dfaffb257faff9685faffa285faff10b0faff22b0faffb4c3faffcedcfaffd2dcfaffd6dcfaff540bfbff541cfbff5c1cfbff621efbff6e1efbfff220fbff2236fbff2a4ffbff4a4ffbfffa75fbff0276fbff0878fbff1478fbff508afbff588afbff6a8cfbff1aa0fbff22a0fbff28a2fbff34a2fbffb2fcfbffb6fcfbff380dfcff440dfcff702afcffa62afcff0a38fcff104bfcff1a9afcff1e9afcff96a8fcff9aa8fcffa0aafcffacaafcff7806fdff4c1dfdff1423fdff1823fdff1030fdff1c30fdfff036fdfff436fdfff63ffdfffa3ffdffec43fdfff443fdfff843fdff424ffdffcc4ffdffd04ffdffc85cfdffd05cfdffd45cfdffbe5ffdff7260fdff8260fdff4661fdff2068fdff2468fdff1c75fdff2875fdffea77fdff1ee9fdff2ae9fdffdc79feffe879feff3ebffeff42bffeff3accfeff46ccfeff5cd3feff60d3feff58e0feff64e0feffb2f3feffbef3feff7407ffffb630ffffc230ffff7285ffff7a85ffff7e85ffff28e7ffff34e7ffff20eaffff24eaffffaafaffff60fbffffe0310000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: GameObject
-        m_OriginalName: GameObject
+        m_Name: Stand
+        m_OriginalName: Stand
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -1678136
+        m_UserData: 350714
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -732,7 +732,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 962c0000
     m_LastClickedID: 11414
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000b82c0000d62c0000a02d0000c42d0000ce2d00004c2e00000c2f00001a2f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -757,10 +757,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 53}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000b02c0000ce2c0000982d0000c22d00003e2e0000082f00003057000038570000
+    m_ExpandedIDs: ffffffff00000000b82c0000d62c0000542d0000a02d0000c42d0000ce2d00004c2e00000c2f00001a2f0000684b0200204c0200d2590500
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

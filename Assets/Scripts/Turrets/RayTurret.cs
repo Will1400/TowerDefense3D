@@ -30,6 +30,8 @@ public class RayTurret : Turret
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.startWidth = laserWidth;
         lineRenderer.endWidth = laserWidth;
+        lineRenderer.startColor = laserColor;
+        lineRenderer.endColor = laserColor;
 
         lineRenderer.positionCount = 2;
         InvokeRepeating("UpdateTarget", 0f, 0.3f);
