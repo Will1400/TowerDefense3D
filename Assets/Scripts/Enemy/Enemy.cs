@@ -5,17 +5,46 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    private NavMeshAgent agent;
+    [SerializeField]
+    private float speed = .5f;
+
+    public float Speed
+    {
+        get { return speed; }
+        set { speed = value; }
+    }
+
+    private Transform currentWaypoint;
+    private int currentWaypointIndex;
+
     // Start is called before the first frame update
     void Start()
     {
-        
-        Coord end = MapGenerator.Instance.Path[0];
-        agent.SetDestination(new Vector3(end.x, 1, end.y));
+        currentWaypoint = MapGenerator.Instance.Waypoints[currentWaypointIndex];
+        transform.LookAt(currentWaypoint.position);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (currentWaypoint is null)
+            return;
+
+        if (Vector3.Distance(transform.position, currentWaypoint.position) < .2f)
+        {
+            NextWaypoint();
+        }
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+
+    }
+
+    void NextWaypoint()
+    {
+        currentWaypointIndex++;
+        if (currentWaypointIndex >= MapGenerator.Instance.Waypoints.Count)
+            currentWaypoint = null;
+
+        currentWaypoint = MapGenerator.Instance.Waypoints[currentWaypointIndex];
+        transform.LookAt(currentWaypoint.position);
     }
 }

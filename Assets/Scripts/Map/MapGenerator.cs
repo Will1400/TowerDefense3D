@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class MapGenerator : MonoBehaviour
@@ -10,6 +11,7 @@ public class MapGenerator : MonoBehaviour
     public int[,] Map; // 0 = tile, 1 = path, 2 = wall,  9 = start , 10 = end
     public Transform[,] objMap;
     public int Seed = 10;
+    public List<Transform> Waypoints;
 
     [HideInInspector]
     public List<Coord> Path;
@@ -36,7 +38,7 @@ public class MapGenerator : MonoBehaviour
     private Vector2Int startPoint;
     private Vector2Int endPoint;
 
-    void Start()
+    void Awake()
     {
         if (MapGenerator.Instance is null)
         {
@@ -80,10 +82,7 @@ public class MapGenerator : MonoBehaviour
             mapSize.y = 4;
 
         Map = new int[mapSize.x, mapSize.y];
-
     }
-
-
 
 
     void RenderMap()
@@ -114,20 +113,33 @@ public class MapGenerator : MonoBehaviour
                 Transform newTile;
                 switch (Map[x, y])
                 {
-                    case 0:
-                        newTile = Instantiate(tilePrefab, position, Quaternion.identity, mapHolder.Find("Tiles")).transform;
-                        newTile.localScale = new Vector3(1 * (1 - outlinePercent), newTile.localScale.y, 1 * (1 - outlinePercent));
-                        newTile.localPosition += new Vector3(0, .5f - newTile.localPosition.y / 2);
-                        objMap[x, y] = newTile;
-                        newTile.name = $"Tile {x} {y}";
-                        break;
-                    case 1:
+
+                    case 1: // Path
                         newTile = Instantiate(pathPrefab, position, Quaternion.identity, mapHolder.Find("Path")).transform;
                         newTile.localPosition += new Vector3(0, .5f - newTile.localPosition.y / 2);
                         break;
+                    case 9: // StartPoint
+                        newTile = Instantiate(pathPrefab, position, Quaternion.identity, mapHolder.Find("Path")).transform;
+                        newTile.localPosition += new Vector3(0, .5f - newTile.localPosition.y / 2);
+                        Instantiate(startPointPrefab, new Vector3(-mapSize.x / 2 + .5f + x, 1, -mapSize.y / 2 + .5f + y), Quaternion.identity, mapHolder.Find("Path"));
+                        break;
+                    case 10: // EndPoint
+                        newTile = Instantiate(pathPrefab, position, Quaternion.identity, mapHolder.Find("Path")).transform;
+                        newTile.localPosition += new Vector3(0, .5f - newTile.localPosition.y / 2);
+                        Instantiate(endPointPrefab, new Vector3(-mapSize.x / 2 + .5f + x, 1, -mapSize.y / 2 + .5f + y), Quaternion.identity, mapHolder.Find("Path"));
+                        break;
+
+                    default: // Normal tile
+                        newTile = Instantiate(tilePrefab, position, Quaternion.identity, mapHolder.Find("Tiles")).transform;
+                        newTile.localScale = new Vector3(1 * (1 - outlinePercent), newTile.localScale.y, 1 * (1 - outlinePercent));
+                        newTile.localPosition += new Vector3(0, .5f - newTile.localPosition.y / 2);
+                        newTile.name = $"Tile {x} {y}";
+                        break;
                 }
+                objMap[x, y] = newTile;
             }
         }
+        GenerateWaypoints();
     }
 
     Vector2Int GenerateEndPoint()
@@ -135,8 +147,6 @@ public class MapGenerator : MonoBehaviour
         int x = Random.Range(2, mapSize.x / 4);
         int y = Random.Range(2, mapSize.y / 4);
         Map[x, y] = 10;
-        Instantiate(endPointPrefab, new Vector3(-mapSize.x / 2 + .5f + x, 1, -mapSize.y / 2 + .5f + y), Quaternion.identity, mapHolder.Find("Path"));
-
         return new Vector2Int(x, y);
     }
 
@@ -145,8 +155,6 @@ public class MapGenerator : MonoBehaviour
         int x = Random.Range(1, mapSize.x - 1);
         int y = Random.Range(1, mapSize.y - 1);
         Map[x, y] = 9;
-        Instantiate(startPointPrefab, new Vector3(-mapSize.x / 2 + .5f + x, 1, -mapSize.y / 2 + .5f + y), Quaternion.identity, mapHolder.Find("Path"));
-
         return new Vector2Int(x, y);
     }
 
@@ -154,14 +162,47 @@ public class MapGenerator : MonoBehaviour
     {
         Path = aStar.GetPath(Map, new Coord(startPoint.x, startPoint.y), new Coord(endPoint.x, endPoint.y));
 
-        foreach (var path in Path)
+        for (int i = 1; i < Path.Count - 1; i++)
         {
-            Map[path.x, path.y] = 1;
-            //var pathObj = objMap[path.x, path.y];
-            //pathObj.GetComponent<Renderer>().material = pathMaterial;
-            //pathObj.SetParent(mapHolder.Find("Path"));
-            //pathObj.localScale = new Vector3(1, pathObj.localScale.y, 1);
-            //pathObj.name = $"Path {path.x} {path.y}";
+            Map[Path[i].x, Path[i].y] = 1;
+        }
+    }
+
+    void GenerateWaypoints()
+    {
+        Waypoints = new List<Transform>();
+        for (int i = 1; i < Path.Count - 1; i++)
+        {
+            Coord previous = Path[i - 1];
+            Coord current = Path[i];
+            Coord next = Path[i + 1];
+
+
+            if (!AlignsWith(previous, next))
+            {
+                PlaceWaypoint(current);
+            }
+
+        }
+
+        PlaceWaypoint(Path.First());
+
+        bool AlignsWith(Coord first, Coord second)
+        {
+            if (first.x != second.x && first.y != second.y)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        void PlaceWaypoint(Coord point)
+        {
+            var waypoint = new GameObject("Waypoint");
+            Vector3 position = new Vector3(-mapSize.x / 2 + .5f + point.x, 1, -mapSize.y / 2 + .5f + point.y);
+            waypoint.transform.position = position;
+            waypoint.transform.SetParent(mapHolder.Find("Path"));
+            Waypoints.Add(waypoint.transform);
         }
     }
 }
