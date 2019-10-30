@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\WaveManager.cs" />
+    <Compile Include="Assets\Scripts\Map\Endpoint.cs" />
     <Compile Include="Assets\Scripts\Map\MapEditor.cs" />
     <Compile Include="Assets\Scripts\Map\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\Map\Tile\Tile.cs" />

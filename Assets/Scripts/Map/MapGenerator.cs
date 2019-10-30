@@ -53,6 +53,10 @@ public class MapGenerator : MonoBehaviour
         }
 
         MapRendered = new UnityEvent();
+    }
+
+    private void Start()
+    {
         GenerateMap();
     }
 

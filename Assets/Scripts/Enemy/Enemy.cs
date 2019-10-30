@@ -42,7 +42,10 @@ public class Enemy : MonoBehaviour
     {
         currentWaypointIndex++;
         if (currentWaypointIndex >= MapGenerator.Instance.Waypoints.Count)
+        {
             currentWaypoint = null;
+            return;
+        }
 
         currentWaypoint = MapGenerator.Instance.Waypoints[currentWaypointIndex];
         transform.LookAt(currentWaypoint.position);

@@ -23,9 +23,11 @@ public class WaveManager : MonoBehaviour
             Destroy(gameObject);
 
         enemyHolder = new GameObject("EnemyHolder").transform;
-        enemyHolder.parent = transform;
-
         MapGenerator.Instance.MapRendered.AddListener(OnMapRendered);
+    }
+
+    private void Awake()
+    {
     }
 
     void OnMapRendered()
@@ -38,7 +40,7 @@ public class WaveManager : MonoBehaviour
     {
         while (true)
         {
-            Instantiate(enemyPrefab, spawnPoints[0], Quaternion.identity);
+            Instantiate(enemyPrefab, spawnPoints[0], Quaternion.identity, enemyHolder);
             yield return new WaitForSeconds(2);
         }
     }

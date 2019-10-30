@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
+    
 
     void Awake()
     {
@@ -20,13 +21,12 @@ public class GameManager : MonoBehaviour
         MapGenerator.Instance.MapRendered.AddListener(OnMapRendered);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     void OnMapRendered()
     {
+    }
+
+    public void TakeDamage(int damage)
+    {
+
     }
 }
