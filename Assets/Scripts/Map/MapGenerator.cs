@@ -60,6 +60,7 @@ public class MapGenerator : MonoBehaviour
     private void Start()
     {
         GenerateMap();
+        RenderMap();
     }
 
     public void GenerateMap()
@@ -77,8 +78,6 @@ public class MapGenerator : MonoBehaviour
         endPoint = GenerateEndPoint();
         startPoint = GenerateStartPoint();
         GeneratePath(startPoint, endPoint);
-
-        RenderMap();
     }
 
     void Setup()

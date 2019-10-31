@@ -2,13 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour, IDamageable
 {
     [SerializeField]
     private float speed = .5f;
-
-    private int health = 5;
+    [SerializeField]
+    private float startHealth = 100;
+    private float health;
+    [SerializeField]
+    private Image healthBar;
+    [SerializeField]
+    private Canvas UI;
 
     private Transform currentWaypoint;
     private int currentWaypointIndex;
@@ -18,6 +24,7 @@ public class Enemy : MonoBehaviour, IDamageable
     {
         currentWaypoint = MapGenerator.Instance.Waypoints[currentWaypointIndex];
         transform.LookAt(currentWaypoint.position);
+        health = startHealth;
     }
 
     // Update is called once per frame
@@ -25,6 +32,8 @@ public class Enemy : MonoBehaviour, IDamageable
     {
         if (currentWaypoint is null)
             return;
+
+        UI.transform.LookAt(Camera.main.transform.position);
 
         if (Vector3.Distance(transform.position, currentWaypoint.position) < .1f)
         {
@@ -47,8 +56,14 @@ public class Enemy : MonoBehaviour, IDamageable
         transform.LookAt(currentWaypoint.position);
     }
 
-    public void Damage(int damage)
+    public void Damage(float damage)
     {
         health -= damage;
+
+        healthBar.fillAmount = health / startHealth;
+        if (health < 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

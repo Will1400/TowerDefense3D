@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 public class Turret : MonoBehaviour
 {
@@ -9,7 +11,7 @@ public class Turret : MonoBehaviour
     public int Cost { get; set; }
 
     [SerializeField]
-    protected int hitDamage = 5;
+    protected float hitDamage = 5;
 
     [SerializeField]
     protected float turnRate = 20;
@@ -21,15 +23,31 @@ public class Turret : MonoBehaviour
     [SerializeField]
     protected Transform partToRotate;
 
-    // Use this for initialization
-    void Start()
-    {
 
+    protected Transform target;
+
+    protected void LookAtTarget()
+    {
+        Vector3 dir = target.position - transform.position;
+        Quaternion lookRotation = Quaternion.LookRotation(dir);
+        Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * turnRate).eulerAngles;
+        partToRotate.rotation = Quaternion.Euler(transform.eulerAngles.x, rotation.y, transform.eulerAngles.z);
     }
 
-    // Update is called once per frame
-    void Update()
+    protected void UpdateTarget()
     {
+        List<Collider> nearbyObjects = Physics.OverlapSphere(firePoint.position, range / 2).ToList();
+        nearbyObjects.RemoveAll(x => x.GetComponent<Enemy>() is null);
 
+        float shortestDistance = Mathf.Infinity;
+        foreach (var enemy in nearbyObjects)
+        {
+            float distanceToEnemy = Vector3.Distance(firePoint.position, enemy.transform.position);
+            if (distanceToEnemy < shortestDistance)
+            {
+                shortestDistance = distanceToEnemy;
+                target = enemy.transform;
+            }
+        }
     }
 }

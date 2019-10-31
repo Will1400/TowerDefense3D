@@ -15,7 +15,7 @@ public class WaveManager : MonoBehaviour
     private Transform enemyHolder;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         if (Instance is null)
             Instance = this;
@@ -29,12 +29,12 @@ public class WaveManager : MonoBehaviour
     void OnMapRendered()
     {
         GetSpawnPoints();
-        StopCoroutine(SpawnEnemies());
+        StopCoroutine("SpawnEnemies");
         foreach (Transform item in enemyHolder)
         {
             Destroy(item.gameObject);
         }
-        StartCoroutine(SpawnEnemies());
+        StartCoroutine("SpawnEnemies");
     }
 
     IEnumerator SpawnEnemies()
