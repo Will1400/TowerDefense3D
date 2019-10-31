@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9aed82797c0900a458453a443af9f616, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -106,3 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 2100000, guid: 9aed82797c0900a458453a443af9f616, type: 2}
+  hoverMaterial: {fileID: 2100000, guid: ceddf78938b056e4b9d8e8735771a2ab, type: 2}
+  invalidMaterial: {fileID: 2100000, guid: 8209f822f5f9529408941aabd50a9a2c, type: 2}

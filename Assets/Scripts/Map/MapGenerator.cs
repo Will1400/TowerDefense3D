@@ -113,6 +113,10 @@ public class MapGenerator : MonoBehaviour
         Transform pathHolder = new GameObject("Path").transform;
         pathHolder.parent = mapHolder;
 
+        Transform turretHolder = new GameObject("Turrets").transform;
+        turretHolder.parent = transform;
+
+
         for (int x = 0; x < mapSize.x; x++)
         {
             for (int y = 0; y < mapSize.y; y++)

@@ -12,10 +12,6 @@ public class RayTurret : Turret
     [SerializeField]
     private float laserWidth = .01f;
     [SerializeField]
-    private float maxLength = 50.0f;
-    [SerializeField]
-    private float updateRate = .005f;
-    [SerializeField]
     private Color laserColor = Color.green;
     private LineRenderer lineRenderer;
 

@@ -1,21 +1,57 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Tile : MonoBehaviour
 {
-
     public TileState State;
 
-    // Start is called before the first frame update
-    void Start()
+    public GameObject Turret;
+
+    [Header("Materials")]
+    [SerializeField]
+    private Material defaultMaterial;
+    [SerializeField]
+    private Material hoverMaterial;
+    [SerializeField]
+    private Material invalidMaterial;
+
+    private MeshRenderer meshRenderer;
+
+    private void Start()
     {
-        
+        meshRenderer = GetComponent<MeshRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void BuildTurret(GameObject _turret)
     {
-        
+        if (State == TileState.Empty)
+        {
+            Turret = _turret;
+        }
+    }
+
+    private void OnMouseEnter()
+    {
+            meshRenderer.material = hoverMaterial;
+    }
+    private void OnMouseExit()
+    {
+        meshRenderer.material = defaultMaterial;
+    }
+
+    private void OnMouseDown()
+    {
+        if (State == TileState.Empty)
+        {
+            if (!EventSystem.current.IsPointerOverGameObject())
+            {
+
+            Turret = Instantiate(BuildManager.Instance.SelectedTurret, new Vector3(transform.position.x, 0, transform.position.z), Quaternion.identity, GameObject.Find("Turrets").transform);
+            Turret.transform.position += Turret.GetComponent<Turret>().offset;
+            State = TileState.Filled;
+            }
+        }
     }
 }

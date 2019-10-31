@@ -7,12 +7,12 @@ public class Turret : MonoBehaviour
 {
 
     public string Name;
+    public Sprite Icon;
 
     public int Cost { get; set; }
 
     [SerializeField]
     protected float hitDamage = 5;
-
     [SerializeField]
     protected float turnRate = 20;
     [SerializeField]
@@ -22,7 +22,8 @@ public class Turret : MonoBehaviour
     protected Transform firePoint;
     [SerializeField]
     protected Transform partToRotate;
-
+    [SerializeField]
+    public Vector3 offset = new Vector3(0, .55f, 0);
 
     protected Transform target;
 

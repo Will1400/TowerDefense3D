@@ -167,6 +167,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &3375543
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -273,6 +277,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &17371440
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -379,6 +387,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &17390691
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -485,6 +497,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &22110140
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -591,6 +607,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &24652534
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -697,6 +717,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &28750555
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -895,6 +919,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &31580924
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1001,6 +1029,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &34910030
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1107,6 +1139,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &41646054
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1213,6 +1249,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &49983650
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1319,6 +1359,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &50980376
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1425,6 +1469,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &55099463
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1531,6 +1579,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &58634073
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1637,6 +1689,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &63056499
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1743,6 +1799,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &65841618
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1941,6 +2001,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &70508168
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2047,6 +2111,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &77174792
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2153,6 +2221,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &83679324
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2259,6 +2331,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &83946239
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2365,6 +2441,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &85892324
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2471,6 +2551,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &95029640
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2577,6 +2661,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &107503386
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2683,6 +2771,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &118729188
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2789,6 +2881,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &121024974
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2895,6 +2991,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &121781098
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3001,6 +3101,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &123594425
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3107,6 +3211,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &135170468
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3305,6 +3413,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &138294826
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3503,6 +3615,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &142462830
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3609,6 +3725,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &156484700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3715,6 +3835,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &166958480
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3821,6 +3945,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &167441984
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3927,6 +4055,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &173165326
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4033,6 +4165,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &179912910
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4139,6 +4275,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &182215906
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4337,6 +4477,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &190173021
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4443,6 +4587,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &193900142
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4549,6 +4697,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &202078184
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4655,6 +4807,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &202250478
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4792,6 +4948,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &207160618
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4851,6 +5011,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207160615}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &225670389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 225670390}
+  m_Layer: 5
+  m_Name: Content
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &225670390
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225670389}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 670162836}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0, y: 0}
+  m_SizeDelta: {x: 0, y: 269.1}
+  m_Pivot: {x: 0, y: 1}
 --- !u!1 &239683467
 GameObject:
   m_ObjectHideFlags: 0
@@ -4861,8 +5056,9 @@ GameObject:
   m_Component:
   - component: {fileID: 239683469}
   - component: {fileID: 239683468}
+  - component: {fileID: 239683470}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: Managers
   m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4893,8 +5089,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &239683470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239683467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa59e2b53e280b449a9cd07b4aa8f14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TurretPrefabs:
+  - {fileID: 3915097984359822253, guid: b4b4f895218ed3541a04d2c2e31d0d80, type: 3}
+  - {fileID: 1306670693139987046, guid: 83b4dc136ae8f61409e6cebed1d5c8b5, type: 3}
+  - {fileID: 2656481249104475191, guid: 688448a854489b94397a5fbe4c0fa4b0, type: 3}
+  - {fileID: 2656481249104475191, guid: 688448a854489b94397a5fbe4c0fa4b0, type: 3}
+  - {fileID: 2656481249104475191, guid: 688448a854489b94397a5fbe4c0fa4b0, type: 3}
+  - {fileID: 2656481249104475191, guid: 688448a854489b94397a5fbe4c0fa4b0, type: 3}
+  - {fileID: 2656481249104475191, guid: 688448a854489b94397a5fbe4c0fa4b0, type: 3}
+  - {fileID: 2656481249104475191, guid: 688448a854489b94397a5fbe4c0fa4b0, type: 3}
+  - {fileID: 2656481249104475191, guid: 688448a854489b94397a5fbe4c0fa4b0, type: 3}
+  - {fileID: 2656481249104475191, guid: 688448a854489b94397a5fbe4c0fa4b0, type: 3}
 --- !u!1 &241833607
 GameObject:
   m_ObjectHideFlags: 0
@@ -4942,6 +5161,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &241833610
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5048,6 +5271,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &242597263
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5154,6 +5381,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &245450637
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5260,6 +5491,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &248801246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5319,6 +5554,129 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 248801243}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &255667704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 255667705}
+  - component: {fileID: 255667708}
+  - component: {fileID: 255667707}
+  - component: {fileID: 255667706}
+  - component: {fileID: 255667709}
+  m_Layer: 5
+  m_Name: TurretShop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &255667705
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255667704}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 670162836}
+  - {fileID: 1529512516}
+  m_Father: {fileID: 1348820148}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 3, y: -403.67}
+  m_SizeDelta: {x: 1079, y: 273}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &255667706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255667704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 225670390}
+  m_Horizontal: 1
+  m_Vertical: 0
+  m_MovementType: 2
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 50
+  m_Viewport: {fileID: 670162836}
+  m_HorizontalScrollbar: {fileID: 1529512517}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 2
+  m_VerticalScrollbarVisibility: 2
+  m_HorizontalScrollbarSpacing: -3
+  m_VerticalScrollbarSpacing: -3
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &255667707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255667704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.7058824}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &255667708
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255667704}
+  m_CullTransparentMesh: 0
+--- !u!114 &255667709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255667704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eab78d4ebf7904e4ba43ae0bbee23d61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 255667706}
+  scrollContent: {fileID: 225670389}
+  turretEntryPrefab: {fileID: 1662059697897121628, guid: 5a277db51a39ba54ca5343e8c5c568d4,
+    type: 3}
 --- !u!1 &258806475
 GameObject:
   m_ObjectHideFlags: 0
@@ -5366,6 +5724,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &258806478
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5564,6 +5926,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &263370090
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5762,6 +6128,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &274001111
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5868,6 +6238,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &276391219
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5974,6 +6348,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &281009624
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6080,6 +6458,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &288170059
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6186,6 +6568,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &290468957
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6384,6 +6770,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &296676817
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6490,6 +6880,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &306760569
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6688,6 +7082,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &312715511
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6824,6 +7222,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &317541165
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6930,6 +7332,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &325528998
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7036,6 +7442,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &329061571
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7142,6 +7552,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &330531731
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7248,6 +7662,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &338026387
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7354,6 +7772,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &339630807
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7460,6 +7882,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &344770468
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7566,6 +7992,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &356283829
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7764,6 +8194,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &362258647
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7870,6 +8304,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &362957497
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7976,6 +8414,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &367512686
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8082,6 +8524,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &370377386
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8188,6 +8634,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &388075306
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8294,6 +8744,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &388926892
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8400,6 +8854,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &390121157
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8506,6 +8964,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &390146722
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8612,6 +9074,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &397903086
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8718,6 +9184,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &399588849
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8824,6 +9294,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &399815790
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8930,6 +9404,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &401483731
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9036,6 +9514,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &405417175
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9142,6 +9624,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &410515375
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9248,6 +9734,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &427001017
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9354,6 +9844,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &427134814
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9460,6 +9954,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &435448273
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9566,6 +10064,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &438002479
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9764,6 +10266,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &439432667
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9962,6 +10468,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &453754204
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10068,6 +10578,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &484089925
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10174,6 +10688,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &499118626
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10233,6 +10751,42 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499118623}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &503012316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 503012317}
+  m_Layer: 5
+  m_Name: Sliding Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &503012317
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503012316}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1302677422}
+  m_Father: {fileID: 1529512516}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: -20}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &506101156
 GameObject:
   m_ObjectHideFlags: 0
@@ -10280,6 +10834,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &506101159
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10478,6 +11036,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &507924294
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10584,6 +11146,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &512621948
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10690,6 +11256,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &530193596
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10796,6 +11366,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &532037377
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10902,6 +11476,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &535693758
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11074,6 +11652,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &551104716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11272,6 +11854,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &553604770
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11378,6 +11964,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &555944373
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11484,6 +12074,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &563475678
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11682,6 +12276,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &567825981
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11788,6 +12386,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &573869967
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11894,6 +12496,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &573902148
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12000,6 +12606,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &575508668
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12136,6 +12746,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &578414321
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12242,6 +12856,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &578690291
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12348,6 +12966,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &581447348
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12454,6 +13076,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &586815512
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12652,6 +13278,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &591451231
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12758,6 +13388,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &594033160
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12864,6 +13498,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &597196856
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12970,6 +13608,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &600915443
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13076,6 +13718,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &602879873
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13212,6 +13858,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &619664748
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13318,6 +13968,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &623438647
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13516,6 +14170,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &635575013
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13622,6 +14280,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &641790830
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13728,6 +14390,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &645237754
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13926,6 +14592,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &649527095
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14032,6 +14702,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &662465806
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14138,6 +14812,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &664715183
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14224,13 +14902,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665114746}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0.002516356, y: -0.0069394605, z: -0.0046568094, w: 0.9999619}
   m_LocalPosition: {x: 8.5, y: 0.5, z: -4.5}
   m_LocalScale: {x: 0.9, y: 0.2, z: 0.9}
   m_Children: []
   m_Father: {fileID: 1432842011}
   m_RootOrder: 312
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.28500003, y: -0.79700005, z: -0.536}
 --- !u!114 &665114748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14244,6 +14922,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &665114749
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14350,6 +15032,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &665413762
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14409,6 +15095,94 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665413759}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &670162835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 670162836}
+  - component: {fileID: 670162839}
+  - component: {fileID: 670162838}
+  - component: {fileID: 670162837}
+  m_Layer: 5
+  m_Name: Viewport
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &670162836
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670162835}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 225670390}
+  m_Father: {fileID: 255667705}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &670162837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670162835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 0
+--- !u!114 &670162838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670162835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &670162839
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670162835}
+  m_CullTransparentMesh: 0
 --- !u!1 &672234868
 GameObject:
   m_ObjectHideFlags: 0
@@ -14548,6 +15322,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &675210691
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14654,6 +15432,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &675701970
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14852,6 +15634,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &685635229
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14958,6 +15744,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &701888424
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15106,7 +15896,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &708444250
 GameObject:
@@ -15247,6 +16037,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &712600996
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15353,6 +16147,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &724728012
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15551,6 +16349,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &732300987
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15657,6 +16459,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &741974606
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15763,6 +16569,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &744913391
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15899,6 +16709,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &753363742
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16097,6 +16911,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &757394850
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16203,6 +17021,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &765753505
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16309,6 +17131,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &772100222
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16415,6 +17241,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &773364089
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16551,6 +17381,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &777629493
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16657,6 +17491,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &778975905
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16763,6 +17601,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &780640550
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16961,6 +17803,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &783902391
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17067,6 +17913,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &784594722
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17265,6 +18115,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &791645755
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17371,6 +18225,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &803379728
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17477,6 +18335,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &806333155
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17583,6 +18445,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &816737200
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17689,6 +18555,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &818585262
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17795,6 +18665,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &818801164
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17993,6 +18867,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &827234211
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18099,6 +18977,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &844258684
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18205,6 +19087,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &845942789
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18311,6 +19197,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &846118130
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18417,6 +19307,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &847106622
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18523,6 +19417,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &850761555
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18629,6 +19527,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &865728305
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18735,6 +19637,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &866379872
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18841,6 +19747,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &870312651
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18947,6 +19857,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &873928483
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19053,6 +19967,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &877397774
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19159,6 +20077,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &878053508
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19265,6 +20187,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &885553239
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19463,6 +20389,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &894674674
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19569,6 +20499,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &900771726
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19675,6 +20609,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &902893898
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19781,6 +20719,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &911377827
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19887,6 +20829,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &916980258
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20085,6 +21031,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &938722501
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20191,6 +21141,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &945699954
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20297,6 +21251,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &945867825
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20403,6 +21361,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &946821408
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20592,6 +21554,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &963647025
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20698,6 +21664,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &974229817
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20804,6 +21774,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &984402809
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21002,6 +21976,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &993618160
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21108,6 +22086,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1000074316
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21214,6 +22196,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1000287117
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21412,6 +22398,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1007544538
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21518,6 +22508,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1010407073
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21716,6 +22710,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1012768554
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21914,6 +22912,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1023550339
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22020,6 +23022,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1023681085
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22126,6 +23132,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1030049707
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22232,6 +23242,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1038851016
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22338,6 +23352,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1040322904
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22444,6 +23462,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1042330247
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22550,6 +23572,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1044102087
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22656,6 +23682,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1047244859
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22762,6 +23792,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1086245190
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22868,6 +23902,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1088248175
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22974,6 +24012,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1089943828
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23080,6 +24122,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1092826508
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23186,6 +24232,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1098931989
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23292,6 +24342,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1106347243
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23398,6 +24452,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1119642453
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23504,6 +24562,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1122125402
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23610,6 +24672,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1124566127
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23716,6 +24782,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1127920494
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23914,6 +24984,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1134439578
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24020,6 +25094,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1139090306
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24126,6 +25204,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1140174093
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24232,6 +25314,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1150523468
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24338,6 +25424,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1153167748
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24444,6 +25534,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1155725223
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24550,6 +25644,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1158548116
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24656,6 +25754,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1164189816
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24762,6 +25864,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1169899249
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24868,6 +25974,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1170133856
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24974,6 +26084,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1180032659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25080,6 +26194,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1182094741
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25186,6 +26304,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1183091609
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25292,6 +26414,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1184704963
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25398,6 +26524,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1185169067
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25504,6 +26634,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1189118580
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25610,6 +26744,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1190922545
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25716,6 +26854,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1191712368
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25822,6 +26964,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1202203243
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25928,6 +27074,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1209170994
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26034,6 +27184,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1212028923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26140,6 +27294,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1219874229
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26246,6 +27404,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1222726264
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26352,6 +27514,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1223665618
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26458,6 +27624,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1225338981
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26564,6 +27734,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1235516142
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26670,6 +27844,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1238943020
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26776,6 +27954,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1243222198
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26914,6 +28096,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1250541734
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27112,6 +28298,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1263178658
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27218,6 +28408,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1264931388
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27324,6 +28518,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1268434811
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27430,6 +28628,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1270368666
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27536,6 +28738,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1274022515
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27734,6 +28940,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1287471448
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27840,6 +29050,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1289469322
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27946,6 +29160,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1300289587
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28005,6 +29223,79 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300289584}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1302677421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1302677422}
+  - component: {fileID: 1302677424}
+  - component: {fileID: 1302677423}
+  m_Layer: 5
+  m_Name: Handle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1302677422
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302677421}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 503012317}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1302677423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302677421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1302677424
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302677421}
+  m_CullTransparentMesh: 0
 --- !u!1 &1304232304
 GameObject:
   m_ObjectHideFlags: 0
@@ -28144,6 +29435,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1309647345
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28250,6 +29545,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1333744792
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28448,6 +29747,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1346337370
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28507,6 +29810,105 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1346337367}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1348820144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1348820148}
+  - component: {fileID: 1348820147}
+  - component: {fileID: 1348820146}
+  - component: {fileID: 1348820145}
+  m_Layer: 5
+  m_Name: UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1348820145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348820144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1348820146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348820144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &1348820147
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348820144}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1348820148
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348820144}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 255667705}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1355196391
 GameObject:
   m_ObjectHideFlags: 0
@@ -28554,6 +29956,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1355196394
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28660,6 +30066,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1365770777
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28766,6 +30176,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1373113702
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28872,6 +30286,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1373413328
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28978,6 +30396,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1376440338
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29084,6 +30506,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1378415941
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29190,6 +30616,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1379017408
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29296,6 +30726,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1390265608
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29402,6 +30836,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1398237160
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29508,6 +30946,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1402901865
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29614,6 +31056,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1405247988
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29720,6 +31166,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1406195861
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29826,6 +31276,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1411216562
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29932,6 +31386,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1418149611
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30038,6 +31496,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1432801120
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30521,6 +31983,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1435836429
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30627,6 +32093,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1436377171
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30733,6 +32203,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1444626385
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30839,6 +32313,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1445299870
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30945,6 +32423,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1449008388
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31051,6 +32533,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1449241317
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31157,6 +32643,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1449783297
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31355,6 +32845,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1460802728
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31645,6 +33139,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1480816183
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31843,6 +33341,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1509254221
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32133,6 +33635,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1524822146
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32239,6 +33745,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1525522353
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32390,6 +33900,129 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529064481}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1529512515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1529512516}
+  - component: {fileID: 1529512519}
+  - component: {fileID: 1529512518}
+  - component: {fileID: 1529512517}
+  m_Layer: 5
+  m_Name: Scrollbar Horizontal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1529512516
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529512515}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 503012317}
+  m_Father: {fileID: 255667705}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 20}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &1529512517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529512515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1529512518}
+  m_HandleRect: {fileID: 0}
+  m_Direction: 0
+  m_Value: 0
+  m_Size: 1
+  m_NumberOfSteps: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1529512518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529512515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1529512519
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529512515}
+  m_CullTransparentMesh: 0
 --- !u!1 &1558307230
 GameObject:
   m_ObjectHideFlags: 0
@@ -32437,6 +34070,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1558307233
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32543,6 +34180,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1569653447
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32649,6 +34290,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1583218198
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32755,6 +34400,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1588507727
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32861,6 +34510,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1589911399
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32967,6 +34620,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1592704129
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33073,6 +34730,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1607824313
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33179,6 +34840,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1615569031
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33285,6 +34950,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1616704626
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33391,6 +35060,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1635943411
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33650,6 +35323,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1646681441
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33756,6 +35433,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1649657267
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33954,6 +35635,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1665653456
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34060,6 +35745,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1666914714
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34257,6 +35946,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1669879491
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34485,6 +36178,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1684040211
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34591,6 +36288,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1685665642
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34697,6 +36398,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1686354647
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34803,6 +36508,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1693467009
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34909,6 +36618,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1694210901
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35015,6 +36728,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1707146368
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35121,6 +36838,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1711210267
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35227,6 +36948,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1730417416
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35333,6 +37058,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1734079668
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35439,6 +37168,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1747503794
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35545,6 +37278,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1749600085
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35651,6 +37388,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1751870777
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35757,6 +37498,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1768713192
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35863,6 +37608,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1769597211
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35969,6 +37718,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1771562062
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36167,6 +37920,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1777065337
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36365,6 +38122,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1777242170
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36563,6 +38324,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1796468151
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36669,6 +38434,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1802907747
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36775,6 +38544,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1806299465
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36881,6 +38654,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1808218488
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37017,6 +38794,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1835804923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37123,6 +38904,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1841171914
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37262,6 +39047,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1847829744
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37368,6 +39157,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1867567847
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37474,6 +39267,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1867980468
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37580,6 +39377,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1876605491
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37686,6 +39487,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1883519670
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37792,6 +39597,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1892841273
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37898,6 +39707,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1893666780
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38004,6 +39817,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1894780689
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38110,6 +39927,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1895305374
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38308,6 +40129,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1907662385
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38506,6 +40331,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1914242097
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38612,6 +40441,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1914344263
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38718,6 +40551,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1917355620
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38824,6 +40661,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1919474829
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38930,6 +40771,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1930412422
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39128,6 +40973,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1941227545
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39234,6 +41083,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1956313263
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39340,6 +41193,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1958502625
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39446,6 +41303,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1960064731
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39552,6 +41413,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1967824781
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39658,6 +41523,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1973911197
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39764,6 +41633,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1980432400
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39993,6 +41866,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1993238415
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40118,7 +41995,7 @@ Transform:
   m_Children:
   - {fileID: 1846812842}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1993745053
 MonoBehaviour:
@@ -40181,6 +42058,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1994039110
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40287,6 +42168,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &1995216626
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40393,6 +42278,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2000928882
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40499,6 +42388,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2003415956
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40605,6 +42498,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2010545229
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40711,6 +42608,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2026679411
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40817,6 +42718,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2031532097
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40923,6 +42828,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2045238222
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41029,6 +42938,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2052400895
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41135,6 +43048,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2058361708
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41241,6 +43158,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2058831810
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41347,6 +43268,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2069183798
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41453,6 +43378,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2079963602
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41559,6 +43488,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2085548345
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41665,6 +43598,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2085966538
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41771,6 +43708,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2089089231
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41877,6 +43818,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2089843052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42013,6 +43958,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2093849300
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42119,6 +44068,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2098560929
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42225,6 +44178,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2101045757
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42331,6 +44288,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2110804079
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42437,6 +44398,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2114962423
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42543,6 +44508,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2115399381
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42649,6 +44618,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2119597417
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42755,6 +44728,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2126033524
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42861,6 +44838,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2127368950
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43059,6 +45040,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2138949193
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43165,6 +45150,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Turret: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  hoverMaterial: {fileID: 0}
+  invalidMaterial: {fileID: 0}
 --- !u!65 &2147265646
 BoxCollider:
   m_ObjectHideFlags: 0
