@@ -19,16 +19,15 @@ public class TurretShop : MonoBehaviour
             var item = BuildManager.Instance.TurretPrefabs[i];
             GameObject turretObj = Instantiate(turretEntryPrefab);
             turretObj.transform.SetParent(scrollContent.transform, false);
+            turretObj.transform.localPosition += new Vector3(60, 0);
             turretObj.transform.localPosition += new Vector3(320, 0) * i;
             var turretComponent = item.GetComponent<Turret>();
             turretObj.GetComponent<TurretEntry>().Initialize(i, turretComponent.Name, turretComponent.Icon);
 
             if (i > 3)
-            {
                 scrollContent.GetComponent<RectTransform>().sizeDelta += new Vector2( 300,0);
-            }
         }
 
-        //scrollView.horizontalNormalizedPosition = 1;
+        scrollView.horizontalNormalizedPosition = 1;
     }
 }
