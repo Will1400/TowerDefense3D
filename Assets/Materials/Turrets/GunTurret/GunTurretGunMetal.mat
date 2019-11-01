@@ -13,14 +13,15 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    MotionVector: User
   disabledShaderPasses:
   - DistortionVectors
+  - MOTIONVECTORS
   - TransparentDepthPrepass
   - TransparentDepthPostpass
   - TransparentBackface
-  - MOTIONVECTORS
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -141,6 +142,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_24432889: 0.65
+    - Vector1_258B0D6D: 0
+    - Vector1_3265D3E9: 30
+    - Vector1_5971718E: 0
+    - Vector1_99A64BE1: 0.02
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
@@ -273,6 +279,8 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
+    - Color_2104F0F5: {r: 0, g: 7.372549, b: 8, a: 1}
+    - Color_C3C282BF: {r: 1, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 0.000000015894573, b: 0, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 0.000000015894573, b: 0, a: 1}
