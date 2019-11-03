@@ -94,7 +94,7 @@ public class MapGenerator : MonoBehaviour
         Map = new int[mapSize.x, mapSize.y];
     }
 
-    void RenderMap()
+    public void RenderMap()
     {
         objMap = new Transform[mapSize.x, mapSize.y];
 
@@ -113,8 +113,10 @@ public class MapGenerator : MonoBehaviour
         Transform pathHolder = new GameObject("Path").transform;
         pathHolder.parent = mapHolder;
 
-        Transform turretHolder = new GameObject("Turrets").transform;
-        turretHolder.parent = transform;
+        if (GameObject.Find("Turrets"))
+            DestroyImmediate(GameObject.Find("Turrets"));
+
+        _ = new GameObject("Turrets").transform;
 
 
         for (int x = 0; x < mapSize.x; x++)

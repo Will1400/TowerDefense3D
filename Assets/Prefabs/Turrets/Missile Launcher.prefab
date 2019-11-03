@@ -155,14 +155,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d36f988edc009945b9a842163fb44e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Missile Tower
+  Name: Missile turret
   Icon: {fileID: 21300000, guid: e0541f5f89856684b850f522aec7277b, type: 3}
   hitDamage: 40
   turnRate: 20
   range: 10
   firePoint: {fileID: 4664245906935325667}
   partToRotate: {fileID: 6232339185296679737}
-  offset: {x: 0, y: 1.1, z: 0}
+  offset: {x: 0, y: 0.55, z: 0}
   fireRate: 2
   bulletPrefab: {fileID: 1241378600150448748, guid: ab543f6e3a4978b44adb902db5943cb9,
     type: 3}

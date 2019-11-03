@@ -33,7 +33,6 @@ public class Enemy : MonoBehaviour, IDamageable
         if (currentWaypoint is null)
             return;
 
-        UI.transform.LookAt(UI.transform.position + Camera.main.transform.rotation * Vector3.forward, Camera.main.transform.rotation * Vector3.up);
 
         if (Vector3.Distance(transform.position, currentWaypoint.position) < .1f)
         {
@@ -41,6 +40,7 @@ public class Enemy : MonoBehaviour, IDamageable
         }
         transform.Translate(Vector3.forward  * speed * Time.deltaTime);
 
+        UI.transform.LookAt(UI.transform.position + Camera.main.transform.rotation * Vector3.forward, Camera.main.transform.rotation * Vector3.up);
     }
 
     void NextWaypoint()
