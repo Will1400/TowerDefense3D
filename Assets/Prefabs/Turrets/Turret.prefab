@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d36f988edc009945b9a842163fb44e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: 
+  Name: Turret
   Icon: {fileID: 21300000, guid: 91ae5fea7c116554db2fe1efedf497d6, type: 3}
   hitDamage: 20
   turnRate: 20
