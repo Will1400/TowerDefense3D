@@ -118,6 +118,8 @@ public class MapGenerator : MonoBehaviour
 
         _ = new GameObject("Turrets").transform;
 
+        Transform start = null;
+        Transform end = null;
 
         for (int x = 0; x < mapSize.x; x++)
         {
@@ -135,12 +137,12 @@ public class MapGenerator : MonoBehaviour
                     case 9: // StartPoint
                         newTile = Instantiate(pathPrefab, position, Quaternion.identity, mapHolder.Find("Path")).transform;
                         newTile.localPosition += new Vector3(0, .5f - newTile.localPosition.y / 2);
-                        Instantiate(startPointPrefab, new Vector3(-mapSize.x / 2 + .5f + x, 1, -mapSize.y / 2 + .5f + y), Quaternion.identity, mapHolder.Find("Path"));
+                        start = Instantiate(startPointPrefab, new Vector3(-mapSize.x / 2 + .5f + x, 1, -mapSize.y / 2 + .5f + y), Quaternion.identity, mapHolder.Find("Path")).transform;
                         break;
                     case 10: // EndPoint
                         newTile = Instantiate(pathPrefab, position, Quaternion.identity, mapHolder.Find("Path")).transform;
                         newTile.localPosition += new Vector3(0, .5f - newTile.localPosition.y / 2);
-                        Instantiate(endPointPrefab, new Vector3(-mapSize.x / 2 + .5f + x, 1, -mapSize.y / 2 + .5f + y), Quaternion.identity, mapHolder.Find("Path"));
+                        end = Instantiate(endPointPrefab, new Vector3(-mapSize.x / 2 + .5f + x, 1, -mapSize.y / 2 + .5f + y), Quaternion.identity, mapHolder.Find("Path")).transform;
                         break;
 
                     default: // Normal tile
@@ -154,6 +156,8 @@ public class MapGenerator : MonoBehaviour
             }
         }
         GenerateWaypoints();
+        start.LookAt(Waypoints.First());
+
         MapRendered.Invoke();
     }
 

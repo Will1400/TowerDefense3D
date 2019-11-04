@@ -8,13 +8,19 @@ public class WaveManager : MonoBehaviour
 {
     public static WaveManager Instance { get; set; }
 
+    public int Level = 1;
+
     [SerializeField]
-    private GameObject enemyPrefab;
+    private List<GameObject> enemyPrefabs;
+    [SerializeField]
+    private bool generateWaves = true;
+    [SerializeField]
+    private List<Wave> waves;
 
     private List<Vector3> spawnPoints;
     private Transform enemyHolder;
 
-    // Start is called before the first frame update
+
     void Awake()
     {
         if (Instance is null)
@@ -23,30 +29,85 @@ public class WaveManager : MonoBehaviour
             Destroy(gameObject);
 
         enemyHolder = new GameObject("EnemyHolder").transform;
+    }
+
+    private void Start()
+    {
         MapGenerator.Instance.MapRendered.AddListener(OnMapRendered);
+
     }
 
     void OnMapRendered()
     {
         GetSpawnPoints();
-        StopCoroutine("SpawnEnemies");
+        StopCoroutine("SpawnWaves");
         foreach (Transform item in enemyHolder)
         {
             Destroy(item.gameObject);
         }
-        StartCoroutine("SpawnEnemies");
+
+        if (generateWaves)
+            GenerateWaves();
+
+        StartCoroutine("SpawnWaves");
     }
 
-    IEnumerator SpawnEnemies()
+    IEnumerator SpawnWave()
     {
         if (spawnPoints.Count == 0)
-           yield break;
+            yield break;
 
-        while (true)
+        for (int i = 0; i < waves[Level - 1].Enemies.Count; i++)
         {
-            Instantiate(enemyPrefab, spawnPoints[0], Quaternion.identity, enemyHolder);
-            yield return new WaitForSeconds(2);
+            Wave wave = waves[Level - 1];
+            for (int d = wave.Difficulity + i + 3; d > 0; d--)
+            {
+                Instantiate(wave.Enemies[i], spawnPoints[0], Quaternion.identity, enemyHolder);
+                yield return new WaitForSeconds(wave.SpawnRate);
+            }
         }
+    }
+
+    IEnumerator SpawnWaves()
+    {
+        while (Level < waves.Count)
+        {
+            if (enemyHolder.childCount == 0)
+            {
+                Level++;
+                yield return new WaitForSeconds(.1f);
+                StartCoroutine(SpawnWave());
+            }
+            else
+            {
+                yield return new WaitForSeconds(1f);
+            }
+        }
+    }
+
+    void GenerateWaves()
+    {
+        if (waves is null)
+            waves = new List<Wave>();
+        else
+            waves.Clear();
+
+        for (int i = 0; i < 10; i++)
+        {
+            waves.Add(GenerateWave(i + 1));
+        }
+    }
+
+    Wave GenerateWave(int difficulity)
+    {
+        Wave wave = new Wave
+        {
+            Difficulity = difficulity,
+            SpawnRate = .3f,
+            Enemies = enemyPrefabs.Take(difficulity).ToList()
+        };
+
+        return wave;
     }
 
     void GetSpawnPoints()

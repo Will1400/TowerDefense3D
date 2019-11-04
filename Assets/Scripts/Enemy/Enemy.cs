@@ -25,6 +25,7 @@ public class Enemy : MonoBehaviour, IDamageable
         currentWaypoint = MapGenerator.Instance.Waypoints[currentWaypointIndex];
         transform.LookAt(currentWaypoint.position);
         health = startHealth;
+        UI.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -61,6 +62,10 @@ public class Enemy : MonoBehaviour, IDamageable
         health -= damage;
 
         healthBar.fillAmount = health / startHealth;
+
+        if (health < startHealth)
+            UI.gameObject.SetActive(true);
+
         if (health <= 0)
         {
             Destroy(gameObject);
