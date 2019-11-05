@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\Turrets\RayTurret.cs" />
     <Compile Include="Assets\Scripts\Turrets\Turret.cs" />
     <Compile Include="Assets\Scripts\UI\LivesUIController.cs" />
+    <Compile Include="Assets\Scripts\UI\NodeUIController.cs" />
     <Compile Include="Assets\Scripts\UI\TurretEntry.cs" />
     <Compile Include="Assets\Scripts\UI\TurretShop.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />

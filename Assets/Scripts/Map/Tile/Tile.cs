@@ -34,7 +34,7 @@ public class Tile : MonoBehaviour
 
     private void OnMouseEnter()
     {
-            meshRenderer.material = hoverMaterial;
+        meshRenderer.material = hoverMaterial;
     }
     private void OnMouseExit()
     {
@@ -43,15 +43,31 @@ public class Tile : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (State == TileState.Empty)
+        if (!EventSystem.current.IsPointerOverGameObject())
         {
-            if (!EventSystem.current.IsPointerOverGameObject())
+            if (State == TileState.Empty)
             {
-
-            Turret = Instantiate(BuildManager.Instance.SelectedTurret, new Vector3(transform.position.x, 0, transform.position.z), Quaternion.identity, GameObject.Find("Turrets").transform);
-            Turret.transform.position += Turret.GetComponent<Turret>().offset;
-            State = TileState.Filled;
+                Turret = Instantiate(BuildManager.Instance.SelectedTurret, new Vector3(transform.position.x, 0, transform.position.z), Quaternion.identity, GameObject.Find("Turrets").transform);
+                Turret.transform.position += Turret.GetComponent<Turret>().offset;
+                State = TileState.Filled;
+                NodeUIController.Instance.DeselectTile();
+            }
+            else
+            {
+                NodeUIController.Instance.SelectTile(this);
             }
         }
+    }
+
+    public void SellTurret()
+    {
+        Turret = null;
+        State = TileState.Empty;
+        Destroy(Turret);
+    }
+
+    public Vector3 GetOffset()
+    {
+        return Turret.GetComponent<Turret>().offset;
     }
 }
