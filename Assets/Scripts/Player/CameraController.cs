@@ -17,8 +17,13 @@ public class CameraController : MonoBehaviour
     void Update()
     {
         // Movement
-        Vector2 dir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        transform.Translate((Vector3.right * dir.x + Vector3.forward * dir.y) * moveSpeed * Time.deltaTime, Space.World);
+        Vector2 dir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
+
+        transform.Translate(((Vector3.right * dir.x) + (Vector3.forward * dir.y)) * Time.deltaTime, Space.World);
+
+        Vector2 mapSize = new Vector2(MapGenerator.Instance.Map.GetUpperBound(0), MapGenerator.Instance.Map.GetUpperBound(1)) + Vector2.one;
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -(mapSize.x / 2), mapSize.x / 2), transform.position.y, Mathf.Clamp(transform.position.z, -(mapSize.y / 2), mapSize.y / 2));
+
 
         // Zoom
         float scroll = Input.GetAxisRaw("Mouse ScrollWheel");
