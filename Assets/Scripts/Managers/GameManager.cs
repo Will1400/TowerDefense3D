@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    public int Health;
+    public int Health = 20;
+
+    public UnityEvent HealthChanged;
 
     void Awake()
     {
@@ -14,6 +17,7 @@ public class GameManager : MonoBehaviour
         else
             Destroy(gameObject);
 
+        HealthChanged = new UnityEvent();
     }
 
     private void Start()
@@ -28,5 +32,6 @@ public class GameManager : MonoBehaviour
     public void TakeDamage(int damage)
     {
         Health -= damage;
+        HealthChanged.Invoke();
     }
 }

@@ -16,9 +16,11 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
+        // Movement
         Vector2 dir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        transform.Translate((Vector3.right * dir.x + Vector3.up * dir.y) * moveSpeed * Time.deltaTime);
+        transform.Translate((Vector3.right * dir.x + Vector3.forward * dir.y) * moveSpeed * Time.deltaTime, Space.World);
 
+        // Zoom
         float scroll = Input.GetAxisRaw("Mouse ScrollWheel");
 
         zoomPercent += scroll * zoomSensitivity;
@@ -29,6 +31,7 @@ public class CameraController : MonoBehaviour
 
         transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, Mathf.Clamp(16 - (13 * zoomPercent), 3, 16), transform.position.z), zoomSpeed * Time.deltaTime);
 
+        // Zoom rotation
         Vector3 targetRotation;
         if (zoomPercent > .5f)
         {
@@ -41,8 +44,6 @@ public class CameraController : MonoBehaviour
         }
 
         Vector3 rotation = Vector3.Lerp(transform.eulerAngles, targetRotation, zoomSpeed * Time.deltaTime);
-        //transform.rotation = Quaternion.Euler(rotation.x, 0, 0);
         transform.eulerAngles = rotation;
-
     }
 }
