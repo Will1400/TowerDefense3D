@@ -16,6 +16,8 @@ public class Bullet : MonoBehaviour
         speed = _speed;
 
         transform.LookAt(target);
+
+        Destroy(gameObject, 10);
     }
 
     protected virtual void Update()

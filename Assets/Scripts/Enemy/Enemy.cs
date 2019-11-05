@@ -34,13 +34,15 @@ public class Enemy : MonoBehaviour, IDamageable
         if (currentWaypoint is null)
             return;
 
-
+        
         if (Vector3.Distance(transform.position, currentWaypoint.position) < .1f)
         {
             NextWaypoint();
         }
-        transform.Translate(Vector3.forward  * speed * Time.deltaTime);
+        
+        transform.position = Vector3.MoveTowards(transform.position, currentWaypoint.position, speed * Time.deltaTime);
 
+        // Camera billboard effect
         UI.transform.LookAt(UI.transform.position + Camera.main.transform.rotation * Vector3.forward, Camera.main.transform.rotation * Vector3.up);
     }
 
