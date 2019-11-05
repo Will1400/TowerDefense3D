@@ -61,9 +61,9 @@ public class Tile : MonoBehaviour
 
     public void SellTurret()
     {
-        Turret = null;
         State = TileState.Empty;
         Destroy(Turret);
+        Turret = null;
     }
 
     public Vector3 GetOffset()
