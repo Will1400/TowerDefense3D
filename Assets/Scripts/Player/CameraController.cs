@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [SerializeField]
-    private float moveSpeed = 1;
+    private float moveSpeed = 10;
 
     [Range(0, 1), SerializeField]
     private float zoomPercent;
@@ -17,6 +17,8 @@ public class CameraController : MonoBehaviour
     void Update()
     {
         Vector2 dir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        transform.Translate((Vector3.right * dir.x + Vector3.up * dir.y) * moveSpeed * Time.deltaTime);
+
         float scroll = Input.GetAxisRaw("Mouse ScrollWheel");
 
         zoomPercent += scroll * zoomSensitivity;
@@ -25,22 +27,22 @@ public class CameraController : MonoBehaviour
         else if (zoomPercent < 0)
             zoomPercent = 0;
 
-        transform.position = new Vector3(transform.position.x + dir.x, Mathf.Clamp(13 - (13 * zoomPercent), 3, 13), transform.position.z + dir.y);
+        transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, Mathf.Clamp(16 - (13 * zoomPercent), 3, 16), transform.position.z), zoomSpeed * Time.deltaTime);
 
-            Vector3 targetRotation;
-        if (zoomPercent > .6f)
+        Vector3 targetRotation;
+        if (zoomPercent > .5f)
         {
-            float rotatePercent = 1 - zoomPercent;
-            targetRotation = new Vector3(Mathf.Clamp(80 - (80 * zoomPercent) / 2, 40, 80), 0);
+            float rotatePercent = (zoomPercent - .5f) / .5f;
+            targetRotation = new Vector3(Mathf.Clamp(80 - (80 * rotatePercent) / 2, 40, 80), 0);
         }
         else
         {
             targetRotation = new Vector3(80, 0);
         }
 
-            Vector3 rotation = Vector3.Lerp(transform.eulerAngles, targetRotation, zoomSpeed * Time.deltaTime);
-            //transform.rotation = Quaternion.Euler(rotation.x, 0, 0);
-            transform.eulerAngles = rotation;
+        Vector3 rotation = Vector3.Lerp(transform.eulerAngles, targetRotation, zoomSpeed * Time.deltaTime);
+        //transform.rotation = Quaternion.Euler(rotation.x, 0, 0);
+        transform.eulerAngles = rotation;
 
     }
 }
