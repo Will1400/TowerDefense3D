@@ -10,9 +10,10 @@ public abstract class Turret : MonoBehaviour
     public string Name;
     public Sprite Icon;
 
-    public int Cost { get; set; }
+    public int Cost = 100;
 
     public int UpgradeTier = 0;
+    public bool CanBeUpgraded => UpgradeTier < tiers.Count;
 
     [SerializeField]
     protected List<UpgradeInTier> tiers;

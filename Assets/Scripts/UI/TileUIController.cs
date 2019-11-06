@@ -4,9 +4,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NodeUIController : MonoBehaviour
+public class TileUIController : MonoBehaviour
 {
-    public static NodeUIController Instance;
+    public static TileUIController Instance;
 
     [SerializeField]
     private GameObject canvas;
@@ -39,6 +39,11 @@ public class NodeUIController : MonoBehaviour
 
         // Billboard effect
         canvas.transform.LookAt(canvas.transform.position + Camera.main.transform.rotation * Vector3.forward, Camera.main.transform.rotation * Vector3.up);
+
+        if (Input.GetKey(KeyCode.Mouse1))
+        {
+            DeselectTile();
+        }
     }
 
     public void OnClickSell()
@@ -69,10 +74,19 @@ public class NodeUIController : MonoBehaviour
     public void SelectTile(Tile tile)
     {
         selectedTile = tile;
-        Vector3 offset = tile.GetOffset();
         canvas.transform.position = tile.transform.position + Vector3.up;
         canvas.SetActive(true);
         Turret tileTurret = tile.Turret.GetComponent<Turret>();
-        upgradeCostText.text = (tileTurret.Cost / (3 - tileTurret.UpgradeTier)).ToString();
+        if (tileTurret.CanBeUpgraded)
+        {
+            upgradeButton.interactable = true;
+            upgradeCostText.text = (tileTurret.Cost / (3 - tileTurret.UpgradeTier)).ToString();
+        }
+        else
+        {
+            upgradeButton.interactable = false;
+            upgradeCostText.text = "Maxed";
+        }
+
     }
 }

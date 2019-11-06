@@ -52,7 +52,7 @@ public class Tile : MonoBehaviour
                 Turret = Instantiate(BuildManager.Instance.SelectedTurret, new Vector3(transform.position.x, 0, transform.position.z), Quaternion.identity, GameObject.Find("Turrets").transform);
                 Turret.transform.position += Turret.GetComponent<Turret>().offset;
                 State = TileState.Filled;
-                NodeUIController.Instance.DeselectTile();
+                TileUIController.Instance.DeselectTile();
 
                 BuildManager.Instance.BuildEffect.transform.position = transform.position;
                 BuildManager.Instance.BuildEffect.SetVector3("EffectPosition", transform.position);
@@ -61,7 +61,7 @@ public class Tile : MonoBehaviour
             }
             else
             {
-                NodeUIController.Instance.SelectTile(this);
+                TileUIController.Instance.SelectTile(this);
             }
         }
     }
@@ -75,7 +75,7 @@ public class Tile : MonoBehaviour
         }
 
         Turret.GetComponent<Turret>().Upgrade();
-        NodeUIController.Instance.DeselectTile();
+        TileUIController.Instance.DeselectTile();
     }
 
     public void SellTurret()

@@ -4882,9 +4882,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1161605730}
-  sellPanel: {fileID: 1612778432}
   sellButton: {fileID: 1026409621}
-  sellText: {fileID: 1021153970}
+  upgradeButton: {fileID: 1060242169}
+  upgradeCostText: {fileID: 2087188658}
 --- !u!1 &245611467
 GameObject:
   m_ObjectHideFlags: 0
