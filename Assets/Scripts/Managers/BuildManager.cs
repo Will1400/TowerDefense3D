@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Experimental.VFX;
 
 public class BuildManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class BuildManager : MonoBehaviour
     public List<GameObject> TurretPrefabs;
 
     public GameObject SelectedTurret { get; set; }
+    public VisualEffect BuildEffect;
 
     private void Awake()
     {

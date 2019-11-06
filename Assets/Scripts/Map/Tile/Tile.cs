@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Experimental.VFX;
 
 public class Tile : MonoBehaviour
 {
@@ -51,12 +53,28 @@ public class Tile : MonoBehaviour
                 Turret.transform.position += Turret.GetComponent<Turret>().offset;
                 State = TileState.Filled;
                 NodeUIController.Instance.DeselectTile();
+
+                BuildManager.Instance.BuildEffect.transform.position = transform.position;
+                BuildManager.Instance.BuildEffect.SetVector3("EffectPosition", transform.position);
+                BuildManager.Instance.BuildEffect.SendEvent("OnPlay");
+
             }
             else
             {
                 NodeUIController.Instance.SelectTile(this);
             }
         }
+    }
+
+    public void UpgradeTurret()
+    {
+        if (Turret is null)
+        {
+            State = TileState.Empty;
+            return;
+        }
+
+
     }
 
     public void SellTurret()
