@@ -12,11 +12,12 @@ public class NodeUIController : MonoBehaviour
     private GameObject canvas;
 
     [SerializeField]
-    private GameObject sellPanel;
-    [SerializeField]
     private Button sellButton;
+
     [SerializeField]
-    private TextMeshProUGUI sellText;
+    private Button upgradeButton;
+    [SerializeField]
+    private TextMeshProUGUI upgradeCostText;
 
     private Tile selectedTile;
 
@@ -71,5 +72,7 @@ public class NodeUIController : MonoBehaviour
         Vector3 offset = tile.GetOffset();
         canvas.transform.position = tile.transform.position + Vector3.up;
         canvas.SetActive(true);
+        Turret tileTurret = tile.Turret.GetComponent<Turret>();
+        upgradeCostText.text = (tileTurret.Cost / (3 - tileTurret.UpgradeTier)).ToString();
     }
 }
