@@ -144,6 +144,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Laser Beamer
   Icon: {fileID: 21300000, guid: 92e6dd5e3e91bf540b427a9fa425790f, type: 3}
+  UpgradeTier: 0
+  tiers:
+  - Tier: 1
+    Upgrades:
+    - AppliesTo: hitDamage
+      Amount: 20
+    - AppliesTo: range
+      Amount: 10
+  - Tier: 2
+    Upgrades:
+    - AppliesTo: hitDamage
+      Amount: 20
+    - AppliesTo: range
+      Amount: 10
   hitDamage: 20
   turnRate: 20
   range: 10

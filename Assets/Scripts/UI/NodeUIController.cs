@@ -49,6 +49,15 @@ public class NodeUIController : MonoBehaviour
         DeselectTile();
     }
 
+    public void OnClickUpgrade()
+    {
+        if (selectedTile is null)
+            return;
+
+        selectedTile.UpgradeTurret();
+        DeselectTile();
+    }
+
 
     public void DeselectTile()
     {

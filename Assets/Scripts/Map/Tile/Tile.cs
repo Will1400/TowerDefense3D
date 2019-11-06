@@ -74,7 +74,8 @@ public class Tile : MonoBehaviour
             return;
         }
 
-
+        Turret.GetComponent<Turret>().Upgrade();
+        NodeUIController.Instance.DeselectTile();
     }
 
     public void SellTurret()
