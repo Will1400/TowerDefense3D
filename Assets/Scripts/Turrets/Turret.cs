@@ -15,8 +15,8 @@ public abstract class Turret : MonoBehaviour
     public int UpgradeTier = 0;
     public bool CanBeUpgraded => UpgradeTier < tiers.Count;
 
-    [SerializeField]
-    protected List<UpgradeInTier> tiers;
+    [SerializeField] // Add some a tier
+    protected List<UpgradeInTier> tiers = new List<UpgradeInTier>() { new UpgradeInTier { Tier = 1, Upgrades = new List<Upgrade>() { new Upgrade { AppliesTo = "hitDamage", Amount = 10 } } } };
 
     [Header("Stats")]
     [Space(10)]

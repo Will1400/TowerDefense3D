@@ -87,6 +87,5 @@ public class TileUIController : MonoBehaviour
             upgradeButton.interactable = false;
             upgradeCostText.text = "Maxed";
         }
-
     }
 }
