@@ -4798,6 +4798,7 @@ GameObject:
   - component: {fileID: 239683470}
   - component: {fileID: 239683471}
   - component: {fileID: 239683472}
+  - component: {fileID: 239683473}
   m_Layer: 0
   m_Name: Managers
   m_TagString: GameController
@@ -4885,6 +4886,30 @@ MonoBehaviour:
   sellButton: {fileID: 1026409621}
   upgradeButton: {fileID: 1060242169}
   upgradeCostText: {fileID: 2087188658}
+--- !u!114 &239683473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239683467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 876db00c5884cd248a81d3742d3d2d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Effects
+      Entry: 6
+      Data: 
 --- !u!1 &245611467
 GameObject:
   m_ObjectHideFlags: 0
