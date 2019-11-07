@@ -11,7 +11,6 @@ public class BuildManager : MonoBehaviour
     public List<GameObject> TurretPrefabs;
 
     public GameObject SelectedTurret { get; set; }
-    public VisualEffect BuildEffect;
 
     private void Awake()
     {
@@ -30,5 +29,4 @@ public class BuildManager : MonoBehaviour
     {
         SelectedTurret = TurretPrefabs[index];
     }
-
 }
