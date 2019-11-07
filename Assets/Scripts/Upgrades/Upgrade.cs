@@ -10,10 +10,3 @@ public class Upgrade
     public string AppliesTo;
     public float Amount;
 }
-
-[Serializable]
-public class UpgradeInTier
-{
-    public int Tier;
-    public List<Upgrade> Upgrades;
-}
