@@ -6,9 +6,12 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
+    [SerializeField]
+    private int startHealth = 20;
     public int Health = 20;
 
     public UnityEvent HealthChanged;
+    public UnityEvent GameLost;
 
     void Awake()
     {
@@ -18,6 +21,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
 
         HealthChanged = new UnityEvent();
+        GameLost = new UnityEvent();
     }
 
     private void Start()
@@ -27,11 +31,17 @@ public class GameManager : MonoBehaviour
 
     void OnMapRendered()
     {
+        if (Health <= 0)
+            Health = startHealth;
     }
 
     public void TakeDamage(int damage)
     {
         Health -= damage;
         HealthChanged.Invoke();
+        if (Health <= 0)
+        {
+            GameLost.Invoke();
+        }
     }
 }

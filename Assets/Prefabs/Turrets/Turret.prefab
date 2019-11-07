@@ -47,9 +47,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Turret
   Icon: {fileID: 21300000, guid: 91ae5fea7c116554db2fe1efedf497d6, type: 3}
+  Cost: 100
+  UpgradeTier: 0
+  tiers: []
   hitDamage: 20
   turnRate: 20
-  range: 10
+  range: 5
   firePoint: {fileID: 6663027127189737608}
   partToRotate: {fileID: 5022946437858919296}
   offset: {x: 0, y: 1.1, z: 0}

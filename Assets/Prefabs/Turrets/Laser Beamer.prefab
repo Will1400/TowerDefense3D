@@ -161,7 +161,7 @@ MonoBehaviour:
       Amount: 10
   hitDamage: 20
   turnRate: 20
-  range: 10
+  range: 5
   firePoint: {fileID: 6117990828946293315}
   partToRotate: {fileID: 5442324773901271092}
   offset: {x: 0, y: 0.55, z: 0}

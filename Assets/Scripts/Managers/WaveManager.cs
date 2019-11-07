@@ -8,7 +8,7 @@ public class WaveManager : MonoBehaviour
 {
     public static WaveManager Instance { get; set; }
 
-    public int Level = 1;
+    public int Round = 1;
 
     [SerializeField]
     private List<GameObject> enemyPrefabs;
@@ -34,6 +34,7 @@ public class WaveManager : MonoBehaviour
     private void Start()
     {
         MapGenerator.Instance.MapRendered.AddListener(OnMapRendered);
+        GameManager.Instance.GameLost.AddListener(StopAllCoroutines);
 
     }
 
@@ -57,9 +58,9 @@ public class WaveManager : MonoBehaviour
         if (spawnPoints.Count == 0)
             yield break;
 
-        for (int i = 0; i < waves[Level - 1].Enemies.Count; i++)
+        for (int i = 0; i < waves[Round - 1].Enemies.Count; i++)
         {
-            Wave wave = waves[Level - 1];
+            Wave wave = waves[Round - 1];
             for (int d = wave.Difficulity + i + 3; d > 0; d--)
             {
                 Instantiate(wave.Enemies[i], spawnPoints[0], Quaternion.identity, enemyHolder);
@@ -70,11 +71,11 @@ public class WaveManager : MonoBehaviour
 
     IEnumerator SpawnWaves()
     {
-        while (Level < waves.Count)
+        while (Round < waves.Count)
         {
             if (enemyHolder.childCount == 0)
             {
-                Level++;
+                Round++;
                 yield return new WaitForSeconds(.1f);
                 StartCoroutine(SpawnWave());
             }

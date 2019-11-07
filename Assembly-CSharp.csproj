@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\Turrets\ProjectileTurret.cs" />
     <Compile Include="Assets\Scripts\Turrets\RayTurret.cs" />
     <Compile Include="Assets\Scripts\Turrets\Turret.cs" />
+    <Compile Include="Assets\Scripts\UI\InGameUIController.cs" />
     <Compile Include="Assets\Scripts\UI\LivesUIController.cs" />
     <Compile Include="Assets\Scripts\UI\TileUIController.cs" />
     <Compile Include="Assets\Scripts\UI\TurretEntry.cs" />
