@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -61,11 +60,8 @@ public class WaveManager : MonoBehaviour
         for (int i = 0; i < waves[Round - 1].Enemies.Count; i++)
         {
             Wave wave = waves[Round - 1];
-            for (int d = wave.Difficulity + i + 3; d > 0; d--)
-            {
-                Instantiate(wave.Enemies[i], spawnPoints[0], Quaternion.identity, enemyHolder);
-                yield return new WaitForSeconds(wave.SpawnRate);
-            }
+            Instantiate(wave.Enemies[i], spawnPoints[0], Quaternion.identity, enemyHolder);
+            yield return new WaitForSeconds(wave.SpawnRate);
         }
     }
 
@@ -101,12 +97,39 @@ public class WaveManager : MonoBehaviour
 
     Wave GenerateWave(int difficulity)
     {
+        GameObject enemyPrefab = enemyPrefabs.First();
+        float a = Random.Range(0.2f, 0.4f);
+        float b = Random.Range(0.2f, 0.4f);
+        float c = Random.Range(0.2f, 0.4f);
+        float d = Random.Range(0.2f, 0.4f);
+
+        float abcd = a + b + c + d;
+
+        int enemyAmount = 6 + (int)(a / abcd) * 8 + difficulity;
+        float spawnRate = 0.4f + (d / abcd) - difficulity * 0.002f;
+
         Wave wave = new Wave
         {
             Difficulity = difficulity,
-            SpawnRate = .3f,
-            Enemies = enemyPrefabs.Take(difficulity).ToList()
+            SpawnRate = spawnRate,
         };
+
+        for (int i = 0; i < enemyAmount; i++)
+        {
+
+            a = Random.Range(0.2f, 0.4f);
+            b = Random.Range(0.2f, 0.4f);
+            c = Random.Range(0.2f, 0.4f);
+            d = Random.Range(0.2f, 0.4f);
+            abcd = a + b + c + d;
+            float life = 50f + (b / abcd) * 10f + difficulity * 2f;
+            float speed = 0.2f + (c / abcd) + difficulity * 0.10f;
+
+            Enemy enemyComponent = enemyPrefab.GetComponent<Enemy>();
+            enemyComponent.health = life;
+            enemyComponent.speed = speed;
+            wave.Enemies.Add(enemyComponent.gameObject);
+        }
 
         return wave;
     }

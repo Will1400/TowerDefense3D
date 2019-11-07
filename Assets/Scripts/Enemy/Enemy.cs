@@ -6,11 +6,11 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour, IDamageable
 {
-    [SerializeField]
-    private float speed = .5f;
+    public float speed = .5f;
+
     [SerializeField]
     private float startHealth = 100;
-    private float health;
+    public float health;
     [SerializeField]
     private Image healthBar;
     [SerializeField]
@@ -24,7 +24,10 @@ public class Enemy : MonoBehaviour, IDamageable
     {
         currentWaypoint = MapGenerator.Instance.Waypoints[currentWaypointIndex];
         transform.LookAt(currentWaypoint.position);
-        health = startHealth;
+        if (health == 0)
+            health = startHealth;
+        else
+            startHealth = health;
         UI.gameObject.SetActive(false);
     }
 
@@ -34,12 +37,12 @@ public class Enemy : MonoBehaviour, IDamageable
         if (currentWaypoint is null)
             return;
 
-        
+
         if (Vector3.Distance(transform.position, currentWaypoint.position) < .1f)
         {
             NextWaypoint();
         }
-        
+
         transform.position = Vector3.MoveTowards(transform.position, currentWaypoint.position, speed * Time.deltaTime);
 
         // Camera billboard effect
