@@ -116,7 +116,7 @@ MonoBehaviour:
     x: 369
     y: -353
     width: 726
-    height: 1906
+    height: 1904
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1292,11 +1292,14 @@ VisualEffectResource:
         data: 00000000
     m_Events:
     - name: OnPlay
-      playSystems: 0000000000000000
+      playSystems: 
       stopSystems: 
     - name: OnStop
       playSystems: 
       stopSystems: 00000000
+    - name: Play
+      playSystems: 00000000
+      stopSystems: 
     m_RuntimeVersion: 10
     m_RendererSettings:
       motionVectorGenerationMode: 0
@@ -2479,7 +2482,7 @@ MonoBehaviour:
   - link:
     - context: {fileID: 114023846229194376}
       slotIndex: 0
-  eventName: OnPlay
+  eventName: Play
 --- !u!114 &8926484042661614607
 MonoBehaviour:
   m_ObjectHideFlags: 0

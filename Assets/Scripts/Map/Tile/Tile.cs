@@ -54,10 +54,7 @@ public class Tile : MonoBehaviour
                 State = TileState.Filled;
                 TileUIController.Instance.DeselectTile();
 
-                BuildManager.Instance.BuildEffect.transform.position = transform.position;
-                BuildManager.Instance.BuildEffect.SetVector3("EffectPosition", transform.position);
-                BuildManager.Instance.BuildEffect.SendEvent("OnPlay");
-
+                EffectManager.instance.UseEffectOnce("BuildEffect", transform.position + Vector3.up / 3);
             }
             else
             {
