@@ -178,7 +178,7 @@ public class MapGenerator : MonoBehaviour
         return new Vector2Int(x, y);
     }
 
-    async void GeneratePath(Vector2Int startPoint, Vector2Int endPoint)
+    void GeneratePath(Vector2Int startPoint, Vector2Int endPoint)
     {
         List<Coord> points = new List<Coord>();
 
@@ -194,7 +194,7 @@ public class MapGenerator : MonoBehaviour
             Coord start = points[i];
             Coord end = points[i + 1];
 
-            var newPaths = await aStar.GetPath(Map, start, end);
+            var newPaths = aStar.GetPath(Map, start, end);
             newPaths.Reverse();
 
             foreach (Coord item in newPaths)
@@ -208,8 +208,6 @@ public class MapGenerator : MonoBehaviour
         {
             Map[Path[i].x, Path[i].y] = 1;
         }
-
-        return null;
     }
 
     void GenerateWaypoints()
