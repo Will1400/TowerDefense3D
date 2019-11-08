@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
@@ -57,23 +58,15 @@ public class MapGenerator : MonoBehaviour
         MapRendered = new UnityEvent();
     }
 
-    private void Start()
+    public void Start()
     {
         GenerateMap();
-        RenderMap();
+        StartCoroutine(RenderMap());
     }
 
     public void GenerateMap()
     {
         Setup();
-
-        for (int x = 0; x < mapSize.x; x++)
-        {
-            for (int y = 0; y < mapSize.y; y++)
-            {
-                Map[x, y] = 0;
-            }
-        }
 
         endPoint = GenerateEndPoint();
         startPoint = GenerateStartPoint();
@@ -94,8 +87,12 @@ public class MapGenerator : MonoBehaviour
         Map = new int[mapSize.x, mapSize.y];
     }
 
-    public void RenderMap()
+    public IEnumerator RenderMap()
     {
+        Stopwatch renderTime = new Stopwatch();
+        renderTime.Start();
+        UnityEngine.Debug.Log("Started rendering map");
+
         objMap = new Transform[mapSize.x, mapSize.y];
 
         string holderName = "Generated Map";
@@ -106,21 +103,19 @@ public class MapGenerator : MonoBehaviour
 
         Transform tiles = new GameObject("Tiles").transform;
         tiles.parent = mapHolder;
-
         Transform objects = new GameObject("Objects").transform;
         objects.parent = mapHolder;
-
         Transform pathHolder = new GameObject("Path").transform;
         pathHolder.parent = mapHolder;
 
         if (GameObject.Find("Turrets"))
             DestroyImmediate(GameObject.Find("Turrets"));
-
         _ = new GameObject("Turrets").transform;
 
         Transform start = null;
         Transform end = null;
 
+        yield return null; // Wait for next frame
         for (int x = 0; x < mapSize.x; x++)
         {
             for (int y = 0; y < mapSize.y; y++)
@@ -153,11 +148,17 @@ public class MapGenerator : MonoBehaviour
                         break;
                 }
                 objMap[x, y] = newTile;
+                if (renderTime.ElapsedMilliseconds % 200 == 0)
+                {
+                    yield return null; // Wait for next frame
+                }
             }
         }
         GenerateWaypoints();
         start.LookAt(Waypoints.First());
+        end.LookAt(Waypoints.Last());
 
+        UnityEngine.Debug.Log("Rendering map finished took: " + renderTime.ElapsedMilliseconds);
         MapRendered.Invoke();
     }
 
@@ -177,7 +178,7 @@ public class MapGenerator : MonoBehaviour
         return new Vector2Int(x, y);
     }
 
-    void GeneratePath(Vector2Int startPoint, Vector2Int endPoint)
+    async void GeneratePath(Vector2Int startPoint, Vector2Int endPoint)
     {
         List<Coord> points = new List<Coord>();
 
@@ -193,7 +194,7 @@ public class MapGenerator : MonoBehaviour
             Coord start = points[i];
             Coord end = points[i + 1];
 
-            var newPaths = aStar.GetPath(Map, start, end);
+            var newPaths = await aStar.GetPath(Map, start, end);
             newPaths.Reverse();
 
             foreach (Coord item in newPaths)
@@ -207,6 +208,8 @@ public class MapGenerator : MonoBehaviour
         {
             Map[Path[i].x, Path[i].y] = 1;
         }
+
+        return null;
     }
 
     void GenerateWaypoints()

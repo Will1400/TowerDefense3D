@@ -15,7 +15,8 @@ public class MapEditor : Editor
         {
             MapGenerator map = target as MapGenerator;
             map.GenerateMap();
-            map.RenderMap();
+            //map.RenderMap();
+            map.StartCoroutine(map.RenderMap());
         }
     }
 }
