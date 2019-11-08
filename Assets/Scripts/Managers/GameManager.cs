@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     public UnityEvent HealthChanged;
     public UnityEvent GameLost;
+    public UnityEvent GameWon;
 
     void Awake()
     {
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
 
         HealthChanged = new UnityEvent();
         GameLost = new UnityEvent();
+        GameWon = new UnityEvent();
     }
 
     private void Start()

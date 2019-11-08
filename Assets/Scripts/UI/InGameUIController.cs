@@ -6,9 +6,22 @@ using System;
 public class InGameUIController : MonoBehaviour
 {
     [SerializeField]
+    private GameObject gameWonPanel;
+    [SerializeField]
+    private TextMeshProUGUI gameWonRoundNumberText;
+    [SerializeField]
     private GameObject gameOverPanel;
     [SerializeField]
-    private TextMeshProUGUI roundNumberText;
+    private TextMeshProUGUI gameOverRoundNumberText;
+
+    private void Start()
+    {
+        gameOverPanel.SetActive(false);
+        gameWonPanel.SetActive(false);
+        GameManager.Instance.GameLost.AddListener(GameOver);
+        GameManager.Instance.GameWon.AddListener(GameWon);
+        MapGenerator.Instance.MapRendered.AddListener(MapRendered);
+    }
    
     public void OnClickTryAgain()
     {
@@ -16,21 +29,26 @@ public class InGameUIController : MonoBehaviour
         MapGenerator.Instance.RenderMap();
     }
 
-    private void Start()
+    public void OnClickQuit()
     {
-        gameOverPanel.SetActive(false);
-        GameManager.Instance.GameLost.AddListener(GameOver);
-        MapGenerator.Instance.MapRendered.AddListener(MapRendered);
+        Application.Quit();
     }
 
     void MapRendered()
     {
         gameOverPanel.SetActive(false);
+        gameWonPanel.SetActive(false);
+    }
+
+    private void GameWon()
+    {
+        gameWonPanel.SetActive(true);
+        gameWonRoundNumberText.text = WaveManager.Instance.Round.ToString();
     }
 
     private void GameOver()
     {
         gameOverPanel.SetActive(true);
-        roundNumberText.text = WaveManager.Instance.Round.ToString();
+        gameOverRoundNumberText.text = WaveManager.Instance.Round.ToString();
     }
 }

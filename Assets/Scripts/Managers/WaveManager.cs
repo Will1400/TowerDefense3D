@@ -19,7 +19,6 @@ public class WaveManager : MonoBehaviour
     private List<Vector3> spawnPoints;
     private Transform enemyHolder;
 
-
     void Awake()
     {
         if (Instance is null)
@@ -54,32 +53,44 @@ public class WaveManager : MonoBehaviour
 
     IEnumerator SpawnWave()
     {
-        if (spawnPoints.Count == 0)
+        if (spawnPoints.Count == 0 && waves[Round -1] == null)
             yield break;
 
         for (int i = 0; i < waves[Round - 1].Enemies.Count; i++)
         {
             Wave wave = waves[Round - 1];
-            Instantiate(wave.Enemies[i], spawnPoints[0], Quaternion.identity, enemyHolder);
-            yield return new WaitForSeconds(wave.SpawnRate);
+            if (wave.Enemies[i] != null)
+            {
+                wave.Enemies[i].transform.position = spawnPoints.First();
+                wave.Enemies[i].SetActive(true);
+                yield return new WaitForSeconds(wave.SpawnRate);
+            }
         }
     }
 
     IEnumerator SpawnWaves()
     {
-        while (Round < waves.Count)
+        StartCoroutine(SpawnWave());
+        while (enemyHolder.Find("Wave 1").childCount != 0)
         {
-            if (enemyHolder.childCount == 0)
+            yield return new WaitForSeconds(1f);
+        }
+        Round++;
+
+        while (Round <= waves.Count)
+        {
+            if (enemyHolder.Find("Wave " + (Round - 1)) != null && enemyHolder.Find("Wave " + (Round - 1)).childCount == 0)
             {
-                Round++;
-                yield return new WaitForSeconds(.1f);
                 StartCoroutine(SpawnWave());
+                yield return new WaitForSeconds(waves[Round - 1].SpawnRate * waves[Round - 1].Enemies.Count);
+                Round++;
             }
             else
             {
                 yield return new WaitForSeconds(1f);
             }
         }
+        GameManager.Instance.GameWon.Invoke();
     }
 
     void GenerateWaves()
@@ -98,15 +109,15 @@ public class WaveManager : MonoBehaviour
     Wave GenerateWave(int difficulity)
     {
         GameObject enemyPrefab = enemyPrefabs.First();
-        float a = Random.Range(0.2f, 0.4f);
+        float amount = Random.Range(0.2f, 0.4f);
         float b = Random.Range(0.2f, 0.4f);
         float c = Random.Range(0.2f, 0.4f);
         float d = Random.Range(0.2f, 0.4f);
 
-        float abcd = a + b + c + d;
+        float abcd = amount + b + c + d;
 
-        int enemyAmount = 6 + (int)(a / abcd) * 8 + difficulity;
-        float spawnRate = 0.4f + (d / abcd) - difficulity * 0.002f;
+        int enemyAmount = 6 + (int)(amount / abcd) * 13 + difficulity * 2;
+        float spawnRate = 0.4f + (d / abcd) - difficulity * 0.01f;
 
         Wave wave = new Wave
         {
@@ -114,21 +125,26 @@ public class WaveManager : MonoBehaviour
             SpawnRate = spawnRate,
         };
 
+        Transform waveHolder = new GameObject("Wave " + difficulity).transform;
+        waveHolder.SetParent(enemyHolder);
+
         for (int i = 0; i < enemyAmount; i++)
         {
 
-            a = Random.Range(0.2f, 0.4f);
-            b = Random.Range(0.2f, 0.4f);
-            c = Random.Range(0.2f, 0.4f);
-            d = Random.Range(0.2f, 0.4f);
-            abcd = a + b + c + d;
-            float life = 50f + (b / abcd) * 10f + difficulity * 2f;
-            float speed = 0.2f + (c / abcd) + difficulity * 0.10f;
+            b = Random.Range(0.2f, 0.8f);
+            c = Random.Range(0.2f, 0.8f);
+            abcd = amount + b + c + d;
+            float life = 70f + (b * 3 / abcd) * 70f + difficulity * 20f;
+            float speed = 0.5f + (c * 3 / abcd) * 1 + difficulity * 0.2f;
 
             Enemy enemyComponent = enemyPrefab.GetComponent<Enemy>();
+
             enemyComponent.health = life;
             enemyComponent.speed = speed;
-            wave.Enemies.Add(enemyComponent.gameObject);
+
+            enemyPrefab.SetActive(false);
+            GameObject enemyScaled = Instantiate(enemyPrefab, new Vector3(0, 1000, 0), Quaternion.identity, waveHolder);
+            wave.Enemies.Add(enemyScaled);
         }
 
         return wave;

@@ -351,12 +351,12 @@ GameObject:
   - component: {fileID: 5424992107305114091}
   - component: {fileID: 3682152010617335472}
   m_Layer: 8
-  m_Name: Enemy
+  m_Name: DefaultEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1313932514370660604
 Transform:
   m_ObjectHideFlags: 0
@@ -385,8 +385,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17938a5ee4cbfd541915fc41c0e4fe18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 5.707065
   startHealth: 100
+  health: 538.39435
   healthBar: {fileID: 388475075}
   UI: {fileID: 1505299614}
 --- !u!135 &5424992107305114091
