@@ -46,11 +46,11 @@ public class MapGenerator : MonoBehaviour
 
     void Awake()
     {
-        if (MapGenerator.Instance is null)
+        if (Instance is null)
         {
-            MapGenerator.Instance = this;
+            Instance = this;
         }
-        else if (MapGenerator.Instance != this)
+        else if (Instance != this)
         {
             Destroy(gameObject);
         }
