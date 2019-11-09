@@ -24,55 +24,16 @@ MonoBehaviour:
     - model: {fileID: 8926484042661614839}
       id: 0
       isStickyNote: 0
-    - model: {fileID: 8926484042661614840}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614842}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614844}
-      id: 0
-      isStickyNote: 0
     - model: {fileID: 8926484042661614825}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614826}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614828}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614829}
       id: 0
       isStickyNote: 0
     - model: {fileID: 8926484042661614799}
       id: 0
       isStickyNote: 0
-    - model: {fileID: 8926484042661614800}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614819}
-      id: 0
-      isStickyNote: 0
     - model: {fileID: 8926484042661614756}
       id: 0
       isStickyNote: 0
-    - model: {fileID: 8926484042661614757}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614766}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614775}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614778}
-      id: 0
-      isStickyNote: 0
     - model: {fileID: 8926484042661614753}
-      id: 0
-      isStickyNote: 0
-    - model: {fileID: 8926484042661614754}
       id: 0
       isStickyNote: 0
   - title: Ball
@@ -6363,7 +6324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d78581a96eae8bf4398c282eb0b098bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Parent: {fileID: 0}
+  m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
@@ -8746,7 +8707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d78581a96eae8bf4398c282eb0b098bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Parent: {fileID: 0}
+  m_Parent: {fileID: 114350483966674976}
   m_Children: []
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
