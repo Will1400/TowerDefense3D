@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using Unity.Collections;
+using Unity.Jobs;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -189,21 +191,41 @@ public class MapGenerator : MonoBehaviour
         }
         points.Add(new Coord(endPoint.x, endPoint.y));
 
+        List<GetPathJob> pathJobs = new List<GetPathJob>();
+        NativeArray<JobHandle> jobHandles = new NativeArray<JobHandle>();
         for (int i = 0; i < points.Count - 1; i++)
         {
             Coord start = points[i];
             Coord end = points[i + 1];
 
-            var newPaths = aStar.GetPath(Map, start, end);
-            newPaths.Reverse();
-
-            foreach (Coord item in newPaths)
+            GetPathJob pathJob = new GetPathJob()
             {
-                if (!Path.Contains(item))
-                    Path.Add(item);
-            }
+                Map = th
+               ap,
+                Start = start,
+                End = end,
+                path = new NativeList<Coord>()
+            };
+
+            JobHandle handle = pathJob.Schedule();
+
+            pathJobs.Add(pathJob);
+            jobHandles.Append(handle);
         }
 
+        JobHandle.CompleteAll(jobHandles);
+
+        List<Coord> newPaths = new List<Coord>();
+        foreach (GetPathJob item in pathJobs)
+        {
+            newPaths.AddRange(item.path.ToList());
+        }
+
+        foreach (Coord item in newPaths)
+        {
+            if (!Path.Contains(item))
+                Path.Add(item);
+        }
         for (int i = 1; i < Path.Count - 1; i++)
         {
             if (Map[Path[i].x, Path[i].y] != 9 && Map[Path[i].x, Path[i].y] != 10)
@@ -245,5 +267,24 @@ public class MapGenerator : MonoBehaviour
         waypoint.transform.position = position;
         waypoint.transform.SetParent(mapHolder.Find("Path"));
         Waypoints.Add(waypoint.transform);
+    }
+}
+
+public struct GetPathJob : IJob
+{
+    public NativeHashMap<int, int> Map;
+    public Coord Start;
+    public Coord End;
+    public NativeList<Coord> path;
+
+    public void Execute()
+    {
+        AStar aStar = new AStar();
+        path = new NativeList<Coord>(Allocator.TempJob);
+
+        List<Coord> newPaths = aStar.GetPath(Map, Start, End);
+        newPaths.Reverse();
+        NativeArray<Coord> coords = new NativeArray<Coord>(newPaths.ToArray(), Allocator.TempJob);
+        path.AddRange(coords);
     }
 }
