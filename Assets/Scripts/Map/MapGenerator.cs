@@ -206,7 +206,8 @@ public class MapGenerator : MonoBehaviour
 
         for (int i = 1; i < Path.Count - 1; i++)
         {
-            Map[Path[i].x, Path[i].y] = 1;
+            if (Map[Path[i].x, Path[i].y] != 9 && Map[Path[i].x, Path[i].y] != 10)
+                Map[Path[i].x, Path[i].y] = 1;
         }
     }
 
