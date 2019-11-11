@@ -6,10 +6,14 @@ using System.Linq;
 public class AStar
 {
     private int[,] map;
+    private Coord start;
+    private Coord end;
 
     public List<Coord> GetPath(int[,] map, Coord start, Coord end)
     {
         this.map = map;
+        this.start = start;
+        this.end = end;
         List<Coord> path = new List<Coord>();
 
         Node startNode = new Node(start);
@@ -71,16 +75,20 @@ public class AStar
         if (IsValidPosition(new Coord(x + 1, y)))
             nodes.Add(ConvertPositionToNode(new Coord(x + 1, y)));
 
-
         return nodes;
 
         bool IsValidPosition(Coord pos)
         {
-            if (pos.x > map.GetUpperBound(0) || pos.y > map.GetUpperBound(1) || pos.x < 0 || pos.y < 0)
+            if (pos.x > map.GetUpperBound(0) || pos.y > map.GetUpperBound(1) || pos.x < 0 || pos.y < 0) // outside of map
                 return false;
 
             if (map[pos.x, pos.y] != 2)
+            {
+                if ((map[pos.x, pos.y] == 9 || map[pos.x, pos.y] == 10) && !pos.Equals(end) && !pos.Equals(start))
+                    return false;
+
                 return true;
+            }
 
             return false;
         }
