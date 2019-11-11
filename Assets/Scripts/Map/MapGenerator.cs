@@ -57,7 +57,7 @@ public class MapGenerator : MonoBehaviour
 
         MapRendered = new UnityEvent();
     }
-
+    
     public void Start()
     {
         GenerateMap();
@@ -66,11 +66,15 @@ public class MapGenerator : MonoBehaviour
 
     public void GenerateMap()
     {
+        Stopwatch stopwatch = new Stopwatch();
+        stopwatch.Start();
         Setup();
 
         endPoint = GenerateEndPoint();
         startPoint = GenerateStartPoint();
         GeneratePath(startPoint, endPoint);
+        stopwatch.Stop();
+        UnityEngine.Debug.Log("Generating map took: " + stopwatch.ElapsedMilliseconds);
     }
 
     void Setup()
