@@ -152,17 +152,17 @@ public class MapGenerator : MonoBehaviour
                         break;
                 }
                 objMap[x, y] = newTile;
-                if (renderTime.ElapsedMilliseconds % 200 == 0)
-                {
+
+                if (renderTime.ElapsedMilliseconds % 200 == 0) // To make sure unity dosnt freeze
                     yield return null; // Wait for next frame
-                }
             }
         }
+
         GenerateWaypoints();
         start.LookAt(Waypoints.First());
         end.LookAt(Waypoints.Last());
 
-        UnityEngine.Debug.Log("Rendering map finished took: " + renderTime.ElapsedMilliseconds);
+        UnityEngine.Debug.Log("Rendering map took: " + renderTime.ElapsedMilliseconds);
         MapRendered.Invoke();
     }
 

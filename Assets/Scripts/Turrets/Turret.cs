@@ -6,7 +6,6 @@ using System;
 
 public abstract class Turret : MonoBehaviour
 {
-
     public string Name;
     public Sprite Icon;
 
@@ -27,6 +26,7 @@ public abstract class Turret : MonoBehaviour
     [SerializeField]
     protected float range = 3;
 
+    [Header("Visual")]
     [Space(10)]
     [SerializeField]
     protected Transform firePoint;

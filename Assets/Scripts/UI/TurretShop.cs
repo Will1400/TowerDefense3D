@@ -25,9 +25,9 @@ public class TurretShop : MonoBehaviour
             turretObj.GetComponent<TurretEntry>().Initialize(i, turretComponent.Name, turretComponent.Icon);
 
             if (i > 3)
-                scrollContent.GetComponent<RectTransform>().sizeDelta += new Vector2( 300,0);
+                scrollContent.GetComponent<RectTransform>().sizeDelta += new Vector2( 600,0);
         }
 
-        scrollView.horizontalNormalizedPosition = 1;
+        //scrollView.horizontalNormalizedPosition = 1;
     }
 }

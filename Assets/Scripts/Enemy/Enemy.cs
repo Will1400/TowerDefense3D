@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
+using System.Reflection;
+using System.Linq;
+using Unity.Mathematics;
 
 public class Enemy : MonoBehaviour, IDamageable
 {
@@ -18,6 +21,8 @@ public class Enemy : MonoBehaviour, IDamageable
 
     private Transform currentWaypoint;
     private int currentWaypointIndex;
+
+    private List<Effect> effects = new List<Effect>();
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +42,6 @@ public class Enemy : MonoBehaviour, IDamageable
         if (currentWaypoint is null)
             return;
 
-
         if (Vector3.Distance(transform.position, currentWaypoint.position) < .1f)
         {
             NextWaypoint();
@@ -47,6 +51,12 @@ public class Enemy : MonoBehaviour, IDamageable
 
         // Camera billboard effect
         UI.transform.LookAt(UI.transform.position + Camera.main.transform.rotation * Vector3.forward, Camera.main.transform.rotation * Vector3.up);
+
+
+        // Effects
+        effects.ForEach(x => x.Duration -= Time.deltaTime);
+        effects.Where(x => x.Duration <= 0).ToList().ForEach(x => RemoveEffect(x));
+
     }
 
     void NextWaypoint()
@@ -74,6 +84,56 @@ public class Enemy : MonoBehaviour, IDamageable
         if (health <= 0)
         {
             Destroy(gameObject);
+        }
+    }
+
+    public void ApplyEffect(Effect effect)
+    {
+        if (effects.Contains(effect))
+        {
+            effects.Find(x => x.Equals(effect)).Duration = effect.Duration;
+        }
+        else
+        {
+            effects.Add(effect);
+            Apply(effect);
+        }
+
+        void Apply(Effect effectToApply)
+        {
+            FieldInfo[] fields = this.GetType().GetFields(BindingFlags.FlattenHierarchy | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+
+            foreach (var item in fields)
+            {
+                if (item.Name == effectToApply.AppliesTo)
+                {
+                    float currentValue = (float)item.GetValue(this);
+                    if (effectToApply.EffectType == EffectType.Buff)
+                        item.SetValue(this, currentValue + (currentValue * (effectToApply.Amount / 100)));
+                    else
+                        item.SetValue(this, currentValue - (currentValue * (effectToApply.Amount / 100)));
+
+                }
+            }
+        }
+    }
+
+    void RemoveEffect(Effect effect)
+    {
+        FieldInfo[] fields = this.GetType().GetFields(BindingFlags.FlattenHierarchy | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+
+        foreach (var item in fields)
+        {
+            if (item.Name == effect.AppliesTo)
+            {
+                float currentValue = (float)item.GetValue(this);
+                if (effect.EffectType == EffectType.Buff)
+                    item.SetValue(this, (float)item.GetValue(this) - (effect.Amount / 100));
+                else
+                    item.SetValue(this, (float)item.GetValue(this) + (effect.Amount / 100));
+
+                effects.Remove(effect);
+            }
         }
     }
 }
