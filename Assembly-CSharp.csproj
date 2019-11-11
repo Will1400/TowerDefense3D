@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\Map\Tile\Tile.cs" />
     <Compile Include="Assets\Scripts\Map\Tile\TileState.cs" />
     <Compile Include="Assets\Scripts\Pathfinding\AStar.cs" />
+    <Compile Include="Assets\Scripts\Pathfinding\Heap.cs" />
     <Compile Include="Assets\Scripts\Player\CameraController.cs" />
     <Compile Include="Assets\Scripts\Turrets\AuraTurret.cs" />
     <Compile Include="Assets\Scripts\Turrets\ProjectileTurret.cs" />

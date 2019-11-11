@@ -15,23 +15,21 @@ public class AStar
         Node startNode = new Node(start);
         Node endNode = new Node(end);
 
-        List<Node> openList = new List<Node>();
-        List<Node> closedList = new List<Node>();
+        Heap<Node> openList = new Heap<Node>(map.GetUpperBound(0) * map.GetUpperBound(1));
+        HashSet<Node> closedList = new HashSet<Node>();
 
         openList.Add(startNode);
-        Node currentNode = openList[0];
+        Node currentNode = null;
 
-        while (openList.Count > 0 && !closedList.Exists(x => x.Position.Equals(endNode.Position))) // Loop til end is found
+        while (openList.Count > 0 && !closedList.Select(x => x.Position).Contains(end)) // Loop til end is found
         {
+            currentNode = openList.RemoveFirst();
 
-            currentNode = openList.OrderBy(x => x.F).FirstOrDefault();
-
-            openList.Remove(currentNode);
             closedList.Add(currentNode);
 
             List<Node> children = GetValidAdjacentNodes(currentNode);
 
-            foreach (Node child in children) // stuck
+            foreach (Node child in children)
             {
                 if (closedList.Contains(child) || openList.Contains(child))
                     continue;
@@ -39,7 +37,6 @@ public class AStar
                 child.parent = currentNode;
                 child.H = Math.Abs(child.Position.x - endNode.Position.x) + Math.Abs(child.Position.y - endNode.Position.y);
                 child.G = currentNode.G + 1;
-                child.F = child.G + child.H;
 
                 openList.Add(child);
             }
@@ -94,14 +91,23 @@ public class AStar
         }
     }
 
-    class Node
+    class Node : IHeapItem<Node>
     {
         public int G;
         public int H;
-        public int F;
+        public int F
+        {
+            get
+            {
+                return H + G;
+            }
+        }
+
 
         public Coord Position;
         public Node parent;
+
+        public int HeapIndex { get; set; }
 
         public Node(Coord position, Node parent = null)
         {
@@ -109,6 +115,14 @@ public class AStar
             this.parent = parent;
         }
 
+        public int CompareTo(Node other)
+        {
+            int compare = F.CompareTo(other.F);
+            if (compare == 0)
+                compare = H.CompareTo(other.H);
+
+            return -compare;
+        }
 
         public override bool Equals(object obj)
         {
