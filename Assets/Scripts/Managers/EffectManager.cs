@@ -37,7 +37,10 @@ public class EffectManager : MonoBehaviour
             Effects[i].name = (index < 0)
                 ? sourceString
                 : sourceString.Remove(index, stringToRemove.Length);
+
+            Effects[i].GetComponent<VisualEffect>().Stop();
         }
+
     }
 
     public void UseEffectOnce(string effectName, Vector3 effectPosition)
@@ -49,6 +52,6 @@ public class EffectManager : MonoBehaviour
         VisualEffect effectComponent = effectToUse.GetComponent<VisualEffect>();
         effectToUse.transform.position = effectPosition;
         effectComponent.SetVector3("EffectPosition", effectPosition);
-        effectComponent.SendEvent("Play");
+        effectComponent.Play();
     }
 }

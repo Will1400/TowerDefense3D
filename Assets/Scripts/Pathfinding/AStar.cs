@@ -93,7 +93,7 @@ public class AStar
             return false;
         }
 
-        Node ConvertPositionToNode(Coord pos)
+        static Node ConvertPositionToNode(Coord pos)
         {
             return new Node(pos);
         }
@@ -110,7 +110,6 @@ public class AStar
                 return H + G;
             }
         }
-
 
         public Coord Position;
         public Node parent;
