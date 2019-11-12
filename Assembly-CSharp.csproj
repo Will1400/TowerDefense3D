@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\Managers\EffectManager.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\WaveManager.cs" />
+    <Compile Include="Assets\Scripts\Map\Coord.cs" />
     <Compile Include="Assets\Scripts\Map\Endpoint.cs" />
     <Compile Include="Assets\Scripts\Map\MapEditor.cs" />
     <Compile Include="Assets\Scripts\Map\MapGenerator.cs" />

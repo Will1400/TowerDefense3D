@@ -57,7 +57,7 @@ public class MapGenerator : MonoBehaviour
 
         MapRendered = new UnityEvent();
     }
-    
+
     public void Start()
     {
         GenerateMap();
@@ -186,13 +186,28 @@ public class MapGenerator : MonoBehaviour
     {
         List<Coord> points = new List<Coord>();
 
+        // Generate extra points to reach
         points.Add(new Coord(startPoint.x, startPoint.y));
         for (int i = 0; i < pathDeviation; i++)
         {
-            points.Add(new Coord(Random.Range(0, mapSize.x), Random.Range(0, mapSize.y)));
+            Coord coord = new Coord(Random.Range(0, mapSize.x), Random.Range(0, mapSize.y));
+            while (!IsValidPosition(coord))
+            {
+                coord = new Coord(Random.Range(0, mapSize.x), Random.Range(0, mapSize.y));
+            }
+
+            if (points.Count > 2 && GetNeighbours(coord).Any(x => points.Contains(x)))
+            {
+                i--;
+                continue;
+            }
+
+            points.Add(coord);
         }
+
         points.Add(new Coord(endPoint.x, endPoint.y));
 
+        // Generate path
         for (int i = 0; i < points.Count - 1; i++)
         {
             Coord start = points[i];
@@ -249,5 +264,44 @@ public class MapGenerator : MonoBehaviour
         waypoint.transform.position = position;
         waypoint.transform.SetParent(mapHolder.Find("Path"));
         Waypoints.Add(waypoint.transform);
+    }
+
+    List<Coord> GetNeighbours(Coord coord)
+    {
+        List<Coord> coords = new List<Coord>();
+        int x = coord.x;
+        int y = coord.y;
+
+        if (IsInsideMap(new Coord(x, y - 1)))
+            coords.Add((new Coord(x, y - 1)));
+        if (IsInsideMap(new Coord(x, y + 1)))
+            coords.Add((new Coord(x, y + 1)));
+        if (IsInsideMap(new Coord(x - 1, y)))
+            coords.Add((new Coord(x - 1, y)));
+        if (IsInsideMap(new Coord(x + 1, y)))
+            coords.Add((new Coord(x + 1, y)));
+
+        return coords;
+
+    }
+
+    bool IsInsideMap(Coord pos)
+    {
+        if (pos.x >= mapSize.x || pos.y >= mapSize.y || pos.x < 0 || pos.y < 0) // outside of map
+            return false;
+
+        return true;
+    }
+
+    bool IsValidPosition(Coord coord)
+    {
+        if (IsInsideMap(coord))
+        {
+            int mapValue = Map[coord.x, coord.y];
+            if (mapValue != 2 && mapValue != 9 && mapValue != 10)
+                return true;
+        }
+
+        return false;
     }
 }
