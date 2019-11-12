@@ -141,28 +141,3 @@ public class AStar
         }
     }
 }
-
-public class Coord
-{
-    public int x;
-    public int y;
-
-    public Coord(int x, int y)
-    {
-        this.x = x;
-        this.y = y;
-    }
-
-    public override bool Equals(object obj)
-    {
-        if (obj is Coord coord)
-            return coord.x == x && coord.y == y;
-
-        return false;
-    }
-
-    public override string ToString()
-    {
-        return $"x: {x} y: {y}";
-    }
-}
