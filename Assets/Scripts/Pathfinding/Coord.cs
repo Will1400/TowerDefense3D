@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-public class Coord
+public class Coord : IEquatable<Coord>
 {
     public int x;
     public int y;
@@ -19,9 +19,24 @@ public class Coord
     public override bool Equals(object obj)
     {
         if (obj is Coord coord)
-            return coord.x == x && coord.y == y;
+            return Equals(coord);
 
         return false;
+    }
+
+    public bool Equals(Coord other)
+    {
+        return other != null &&
+               x == other.x &&
+               y == other.y;
+    }
+
+    public override int GetHashCode()
+    {
+        var hashCode = 1502939027;
+        hashCode = hashCode * -1521134295 + x.GetHashCode();
+        hashCode = hashCode * -1521134295 + y.GetHashCode();
+        return hashCode;
     }
 
     public override string ToString()
@@ -37,5 +52,15 @@ public class Coord
     public static bool operator !=(Coord first, Coord second)
     {
         return !first.Equals(second);
+    }
+
+    public static Coord operator +(Coord first, Coord second)
+    {
+        return new Coord(first.x + second.x, first.y + second.y);
+    }
+
+    public static Coord operator -(Coord first, Coord second)
+    {
+        return new Coord(first.x - second.x, first.y - second.y);
     }
 }
