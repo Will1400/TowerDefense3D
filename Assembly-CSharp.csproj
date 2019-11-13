@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{D3995E12-5205-A57F-30F1-1C197EA54F6F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -95,7 +96,6 @@
     <Compile Include="Assets\Scripts\UI\TurretShop.cs" />
     <Compile Include="Assets\Scripts\Upgrades\Upgrade.cs" />
     <Compile Include="Assets\Scripts\Upgrades\UpgradeInTier.cs" />
-    <Compile Include="Assets\Scripts\Utility\TaskManager.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

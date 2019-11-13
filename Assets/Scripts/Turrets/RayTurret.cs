@@ -7,7 +7,6 @@ using UnityEngine;
 public class RayTurret : Turret
 {
 
-
     [Header("Laser settings")]
     [SerializeField]
     private float laserWidth = .01f;
@@ -55,7 +54,6 @@ public class RayTurret : Turret
         }
         lineRenderer.SetPosition(0, firePoint.position);
         lineRenderer.SetPosition(1, target.position);
-
 
         target.gameObject.GetComponent<Enemy>().Damage(hitDamage * Time.deltaTime);
     }
