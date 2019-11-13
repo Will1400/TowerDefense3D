@@ -39,7 +39,7 @@ public class Enemy : MonoBehaviour, IDamageable
     // Update is called once per frame
     void Update()
     {
-        if (currentWaypoint is null)
+        if (currentWaypoint is null || transform is null)
             return;
 
         if (Vector3.Distance(transform.position, currentWaypoint.position) < .1f)
