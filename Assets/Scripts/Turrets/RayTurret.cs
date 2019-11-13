@@ -13,8 +13,10 @@ public class RayTurret : Turret
     private float laserWidth = .01f;
     [SerializeField]
     private Color laserColor = Color.green;
-    private LineRenderer lineRenderer;
+    [SerializeField]
+    private Light light;
 
+    private LineRenderer lineRenderer;
 
     void Start()
     {
@@ -25,6 +27,8 @@ public class RayTurret : Turret
         lineRenderer.endColor = laserColor;
 
         lineRenderer.positionCount = 2;
+
+        light.color = laserColor;
 
         InvokeRepeating("UpdateTarget", 0f, 0.3f);
     }
@@ -47,6 +51,7 @@ public class RayTurret : Turret
         if (!lineRenderer.enabled)
         {
             lineRenderer.enabled = true;
+            light.enabled = true;
         }
         lineRenderer.SetPosition(0, firePoint.position);
         lineRenderer.SetPosition(1, target.position);
@@ -60,6 +65,7 @@ public class RayTurret : Turret
         if (lineRenderer.enabled)
         {
             lineRenderer.enabled = false;
+            light.enabled = false;
         }
     }
 }
