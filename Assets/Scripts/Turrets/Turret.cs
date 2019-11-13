@@ -99,4 +99,29 @@ public abstract class Turret : MonoBehaviour
         }
         return remainingUpgrades;
     }
+
+
+    public void ShowRange()
+    {
+        StartCoroutine("PositionRangeEffect");
+    }
+
+    public void HideRange()
+    {
+        EffectManager.instance.GetEffect("RangeIndicator").Stop();
+        StopCoroutine("PositionRangeEffect");
+    }
+
+    IEnumerator PositionRangeEffect()
+    {
+        var effect = EffectManager.instance.GetEffect("RangeIndicator");
+        effect.SetFloat("Range", range);
+        effect.Play();
+
+        while (true)
+        {
+            effect.transform.position = transform.position + offset;
+            yield return new WaitForSeconds(.1f);
+        }
+    }
 }

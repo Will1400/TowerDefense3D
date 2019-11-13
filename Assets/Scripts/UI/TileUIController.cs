@@ -67,16 +67,21 @@ public class TileUIController : MonoBehaviour
 
     public void DeselectTile()
     {
+        if (selectedTile != null && selectedTile.Turret != null)
+            selectedTile.Turret.GetComponent<Turret>().HideRange();
         canvas.SetActive(false);
         selectedTile = null;
     }
 
     public void SelectTile(Tile tile)
     {
+        DeselectTile();
         selectedTile = tile;
         canvas.transform.position = tile.transform.position + Vector3.up;
         canvas.SetActive(true);
         Turret tileTurret = tile.Turret.GetComponent<Turret>();
+        tile.Turret.GetComponent<Turret>().ShowRange();
+
         if (tileTurret.CanBeUpgraded)
         {
             upgradeButton.interactable = true;

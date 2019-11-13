@@ -54,4 +54,9 @@ public class EffectManager : MonoBehaviour
         effectComponent.SetVector3("EffectPosition", effectPosition);
         effectComponent.Play();
     }
+
+    public VisualEffect GetEffect(string effectName)
+    {
+        return Effects.FirstOrDefault(x => x.name == effectName).GetComponent<VisualEffect>();
+    }
 }
