@@ -4,6 +4,8 @@ using System.Diagnostics;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class MapGenerator : MonoBehaviour
 {
@@ -23,9 +25,9 @@ public class MapGenerator : MonoBehaviour
     [SerializeField, Range(0, 10)]
     private int pathDeviation = 1;
     [SerializeField]
-    private Transform tilePrefab;
+    private AssetReference tileAsset;
     [SerializeField]
-    private Transform pathPrefab;
+    private AssetReference pathAsset;
     [SerializeField]
     private GameObject startPointPrefab;
     [SerializeField]
@@ -56,6 +58,7 @@ public class MapGenerator : MonoBehaviour
         }
 
         MapRendered = new UnityEvent();
+
     }
 
     public void Start()
@@ -129,29 +132,22 @@ public class MapGenerator : MonoBehaviour
                 switch (Map[x, y])
                 {
                     case 1: // Path
-                        newTile = Instantiate(pathPrefab, position, Quaternion.identity, mapHolder.Find("Path")).transform;
-                        newTile.localPosition += new Vector3(0, .5f - newTile.localPosition.y / 2);
-                        newTile.name = $"Path {x} {y}";
+                        SpawnPath(position);
                         break;
                     case 9: // StartPoint
-                        newTile = Instantiate(pathPrefab, position, Quaternion.identity, mapHolder.Find("Path")).transform;
-                        newTile.localPosition += new Vector3(0, .5f - newTile.localPosition.y / 2);
+                        SpawnPath(position);
                         start = Instantiate(startPointPrefab, new Vector3(-mapSize.x / 2 + .5f + x, 1, -mapSize.y / 2 + .5f + y), Quaternion.identity, mapHolder.Find("Path")).transform;
                         break;
                     case 10: // EndPoint
-                        newTile = Instantiate(pathPrefab, position, Quaternion.identity, mapHolder.Find("Path")).transform;
-                        newTile.localPosition += new Vector3(0, .5f - newTile.localPosition.y / 2);
+                        SpawnPath(position);
                         end = Instantiate(endPointPrefab, new Vector3(-mapSize.x / 2 + .5f + x, 1, -mapSize.y / 2 + .5f + y), Quaternion.identity, mapHolder.Find("Path")).transform;
                         break;
 
                     default: // Normal tile
-                        newTile = Instantiate(tilePrefab, position, Quaternion.identity, mapHolder.Find("Tiles")).transform;
-                        newTile.localScale = new Vector3(1 * (1 - outlinePercent), newTile.localScale.y, 1 * (1 - outlinePercent));
-                        newTile.localPosition += new Vector3(0, .5f - newTile.localPosition.y / 2);
-                        newTile.name = $"Tile {x} {y}";
+                        LoadTile(position);
                         break;
                 }
-                objMap[x, y] = newTile;
+                //objMap[x, y] = newTile;
 
                 if (renderTime.ElapsedMilliseconds % 200 == 0) // To make sure unity dosnt freeze
                     yield return null; // Wait for next frame
@@ -164,7 +160,41 @@ public class MapGenerator : MonoBehaviour
 
         UnityEngine.Debug.Log("Rendering map took: " + renderTime.ElapsedMilliseconds);
         MapRendered.Invoke();
+
+
+        void LoadTile(Vector3 position)
+        {
+            var newTile = tileAsset.InstantiateAsync(position, Quaternion.identity, mapHolder.Find("Tiles").transform);
+            newTile.Completed += SpawnTile_Completed;
+        }
+
+        void SpawnPath(Vector3 position)
+        {
+            var newTile = pathAsset.InstantiateAsync(position, Quaternion.identity, mapHolder.Find("Path").transform);
+            newTile.Completed += SpawnPath_Completed;
+        }
     }
+
+    private void SpawnTile_Completed(AsyncOperationHandle<GameObject> obj)
+    {
+        if (!obj.IsDone)
+            return;
+
+        var newTile = obj.Result.transform;
+        newTile.localScale = new Vector3(1 * (1 - outlinePercent), newTile.localScale.y, 1 * (1 - outlinePercent));
+        newTile.localPosition += new Vector3(0, .5f - newTile.localPosition.y / 2);
+        //newTile.name = $"Tile {} {y}";
+    }
+
+    private void SpawnPath_Completed(AsyncOperationHandle<GameObject> obj)
+    {
+        if (!obj.IsDone)
+            return;
+
+        var newTile = obj.Result.transform;
+        newTile.localPosition += new Vector3(0, .5f - newTile.localPosition.y / 2);
+    }
+
 
     Vector2Int GenerateEndPoint()
     {
