@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-public class Coord : IEquatable<Coord>
+public class Coord
 {
     public int x;
     public int y;
@@ -19,24 +18,9 @@ public class Coord : IEquatable<Coord>
     public override bool Equals(object obj)
     {
         if (obj is Coord coord)
-            return Equals(coord);
+            return x == coord.x && y == coord.y;
 
         return false;
-    }
-
-    public bool Equals(Coord other)
-    {
-        return other != null &&
-               x == other.x &&
-               y == other.y;
-    }
-
-    public override int GetHashCode()
-    {
-        var hashCode = 1502939027;
-        hashCode = hashCode * -1521134295 + x.GetHashCode();
-        hashCode = hashCode * -1521134295 + y.GetHashCode();
-        return hashCode;
     }
 
     public override string ToString()
@@ -46,12 +30,12 @@ public class Coord : IEquatable<Coord>
     
     public static bool operator ==(Coord first, Coord second)
     {
-        return first.Equals(second);
+        return first.x == second.x && first.x == second.y;
     }
 
     public static bool operator !=(Coord first, Coord second)
     {
-        return !first.Equals(second);
+        return !(first == second);
     }
 
     public static Coord operator +(Coord first, Coord second)

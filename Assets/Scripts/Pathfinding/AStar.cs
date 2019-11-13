@@ -99,7 +99,7 @@ public class AStar
         }
     }
 
-    class Node : IHeapItem<Node>
+    private class Node : IHeapItem<Node>
     {
         public int G;
         public int H;
