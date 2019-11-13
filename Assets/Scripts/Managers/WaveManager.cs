@@ -42,7 +42,7 @@ public class WaveManager : MonoBehaviour
         StopCoroutine("SpawnWaves");
         foreach (Transform item in enemyHolder)
         {
-            Destroy(item.gameObject);
+            item.gameObject.SetActive(false);
         }
 
         if (generateWaves)

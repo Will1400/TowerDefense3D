@@ -128,7 +128,7 @@ public class MapGenerator : MonoBehaviour
             for (int y = 0; y < mapSize.y; y++)
             {
                 Vector3 position = new Vector3(-mapSize.x / 2 + .5f + x, 0, -mapSize.y / 2 + .5f + y);
-                Transform newTile;
+                //Transform newTile;
                 switch (Map[x, y])
                 {
                     case 1: // Path
@@ -144,7 +144,7 @@ public class MapGenerator : MonoBehaviour
                         break;
 
                     default: // Normal tile
-                        LoadTile(position);
+                        SpawnTile(position);
                         break;
                 }
                 //objMap[x, y] = newTile;
@@ -161,40 +161,27 @@ public class MapGenerator : MonoBehaviour
         UnityEngine.Debug.Log("Rendering map took: " + renderTime.ElapsedMilliseconds);
         MapRendered.Invoke();
 
-
-        void LoadTile(Vector3 position)
+        void SpawnTile(Vector3 position)
         {
             var newTile = tileAsset.InstantiateAsync(position, Quaternion.identity, mapHolder.Find("Tiles").transform);
-            newTile.Completed += SpawnTile_Completed;
+            newTile.Completed += (operation) =>
+            {
+                var spawnedTile = operation.Result.transform;
+                spawnedTile.localScale = new Vector3(1 * (1 - outlinePercent), spawnedTile.localScale.y, 1 * (1 - outlinePercent));
+                spawnedTile.localPosition += new Vector3(0, .5f - spawnedTile.localPosition.y / 2);
+            };
         }
 
         void SpawnPath(Vector3 position)
         {
             var newTile = pathAsset.InstantiateAsync(position, Quaternion.identity, mapHolder.Find("Path").transform);
-            newTile.Completed += SpawnPath_Completed;
+            newTile.Completed += (operation) =>
+            {
+                var spawnedPath = operation.Result.transform;
+                spawnedPath.localPosition += new Vector3(0, .5f - spawnedPath.localPosition.y / 2);
+            };
         }
     }
-
-    private void SpawnTile_Completed(AsyncOperationHandle<GameObject> obj)
-    {
-        if (!obj.IsDone)
-            return;
-
-        var newTile = obj.Result.transform;
-        newTile.localScale = new Vector3(1 * (1 - outlinePercent), newTile.localScale.y, 1 * (1 - outlinePercent));
-        newTile.localPosition += new Vector3(0, .5f - newTile.localPosition.y / 2);
-        //newTile.name = $"Tile {} {y}";
-    }
-
-    private void SpawnPath_Completed(AsyncOperationHandle<GameObject> obj)
-    {
-        if (!obj.IsDone)
-            return;
-
-        var newTile = obj.Result.transform;
-        newTile.localPosition += new Vector3(0, .5f - newTile.localPosition.y / 2);
-    }
-
 
     Vector2Int GenerateEndPoint()
     {

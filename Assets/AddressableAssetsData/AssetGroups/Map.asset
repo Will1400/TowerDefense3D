@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Packed Assets
+  m_Name: Map
   m_EditorClassIdentifier: 
   m_GroupName: Packed Assets
   m_Data:
@@ -20,4 +20,5 @@ MonoBehaviour:
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: b02127e0f379190448b1c2c3e673fdd6, type: 2}
   m_SchemaSet:
-    m_Schemas: []
+    m_Schemas:
+    - {fileID: 11400000, guid: 207e88f7320ad1547971c7d377078d46, type: 2}
