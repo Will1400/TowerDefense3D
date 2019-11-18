@@ -78,6 +78,7 @@ public class Tile : MonoBehaviour
     public void SellTurret()
     {
         State = TileState.Empty;
+        TileUIController.Instance.DeselectTile();
         Destroy(Turret);
         Turret = null;
     }

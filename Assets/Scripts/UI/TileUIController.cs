@@ -52,7 +52,6 @@ public class TileUIController : MonoBehaviour
             return;
 
         selectedTile.SellTurret();
-        DeselectTile();
     }
 
     public void OnClickUpgrade()
