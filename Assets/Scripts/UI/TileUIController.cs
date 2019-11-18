@@ -31,7 +31,6 @@ public class TileUIController : MonoBehaviour
         canvas.SetActive(false);
     }
 
-
     private void Update()
     {
         if (selectedTile is null)

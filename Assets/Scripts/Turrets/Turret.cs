@@ -36,6 +36,7 @@ public abstract class Turret : MonoBehaviour
     public Vector3 offset = new Vector3(0, .55f, 0);
 
     protected Transform target;
+    protected Enemy enemyComponent;
 
     protected void LookAtTarget()
     {
@@ -60,6 +61,8 @@ public abstract class Turret : MonoBehaviour
                 target = enemy.transform;
             }
         }
+
+        enemyComponent = target.GetComponent<Enemy>();
     }
 
     public void Upgrade()

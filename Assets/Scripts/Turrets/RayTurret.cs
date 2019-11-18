@@ -55,7 +55,7 @@ public class RayTurret : Turret
         lineRenderer.SetPosition(0, firePoint.position);
         lineRenderer.SetPosition(1, target.position);
 
-        target.gameObject.GetComponent<Enemy>().Damage(hitDamage * Time.deltaTime);
+        enemyComponent.Damage(hitDamage * Time.deltaTime);
     }
 
     void DeactivateLaser()
