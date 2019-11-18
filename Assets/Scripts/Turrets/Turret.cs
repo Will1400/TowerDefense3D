@@ -62,7 +62,8 @@ public abstract class Turret : MonoBehaviour
             }
         }
 
-        enemyComponent = target.GetComponent<Enemy>();
+        if (target != null)
+            enemyComponent = target.GetComponent<Enemy>();
     }
 
     public void Upgrade()
